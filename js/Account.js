@@ -1,40 +1,54 @@
-function cambiar_login() {
-    document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
-  document.querySelector('.cont_form_login').style.display = "block";
-  document.querySelector('.cont_form_sign_up').style.opacity = "0";               
-  
-  setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },400);  
-    
-  setTimeout(function(){    
-  document.querySelector('.cont_form_sign_up').style.display = "none";
-  },200);  
-    }
-  
-  function cambiar_sign_up(at) {
-    document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
-    document.querySelector('.cont_form_sign_up').style.display = "block";
-  document.querySelector('.cont_form_login').style.opacity = "0";
-    
-  setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";
-  },100);  
-  
-  setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";
-  },400);  
-  
-  
-  }    
-  
-  
-  
-  function ocultar_login_sign_up() {
-  
-  document.querySelector('.cont_forms').className = "cont_forms";  
-  document.querySelector('.cont_form_sign_up').style.opacity = "0";               
-  document.querySelector('.cont_form_login').style.opacity = "0"; 
-  
-  setTimeout(function(){
-  document.querySelector('.cont_form_sign_up').style.display = "none";
-  document.querySelector('.cont_form_login').style.display = "none";
-  },500);  
-    
-    }
+function setFormMessage(formElement, type, message) {
+  const messageElement = formElement.querySelector(".form__message");
+
+  messageElement.textContent = message;
+  messageElement.classList.remove("form__message--success", "form__message--error");
+  messageElement.classList.add(`form__message--${type}`);
+}
+
+function setInputError(inputElement, message) {
+  inputElement.classList.add("form__input--error");
+  inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+}
+
+function clearInputError(inputElement) {
+  inputElement.classList.remove("form__input--error");
+  inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loginForm = document.querySelector("#login");
+  const createAccountForm = document.querySelector("#createAccount");
+
+  document.querySelector("#linkCreateAccount").addEventListener("click", e => {
+      e.preventDefault();
+      loginForm.classList.add("form--hidden");
+      createAccountForm.classList.remove("form--hidden");
+  });
+
+  document.querySelector("#linkLogin").addEventListener("click", e => {
+      e.preventDefault();
+      loginForm.classList.remove("form--hidden");
+      createAccountForm.classList.add("form--hidden");
+  });
+
+  loginForm.addEventListener("submit", e => {
+      e.preventDefault();
+
+      // Perform your AJAX/Fetch login
+
+      setFormMessage(loginForm, "error", "Invalid username/password combination");
+  });
+
+  document.querySelectorAll(".form__input").forEach(inputElement => {
+      inputElement.addEventListener("blur", e => {
+          if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
+              setInputError(inputElement, "Username must be at least 10 characters in length");
+          }
+      });
+
+      inputElement.addEventListener("input", e => {
+          clearInputError(inputElement);
+      });
+  });
+});
