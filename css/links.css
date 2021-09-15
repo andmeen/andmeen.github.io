@@ -110,3 +110,9 @@ body{
    font-size: 27px;
    text-align: center;
 }
+
+.channels{
+  font-size: 40px;
+  font-family: sans-serif;
+  color: white;
+}
