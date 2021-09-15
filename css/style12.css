@@ -1,0 +1,87 @@
+body{
+  background: linear-gradient(to right, #372FCE , #DD1E1E);
+  font-family: sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  transition: 0.5 s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  color: white;
+  height: 8vh;
+}
+nav .links {
+  display: flex;
+}
+.links p{
+  padding: 10px;
+}
+#mobile-menu-btn {
+  display: none;
+}
+.mobile-menu {
+  color: white;
+  display: none;
+  position: absolute;
+  right: 0;
+  height: 60vh;
+  width: 70vw;
+  background-color: white;
+}
+
+
+@media (max-width: 600px) {
+  #mobile-menu-btn {
+    display: block;
+  }
+  nav p {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+
+.mob{
+  text-decoration: none;
+  color: #17C4E1;
+}
+
+.mob:hover{
+  text-decoration: #372FCE;
+}
+
+.menu-for-lap{
+  color: #17C4E1;
+  text-decoration: none;
+}
+
+.s{
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+.My-so{
+  font-size: 36px;
+  text-decoration: none;
+  color: white;
+}
+
+.hello{
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+}
