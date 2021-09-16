@@ -55,20 +55,15 @@ nav .links {
 
 .mob{
   text-decoration: none;
-  color: #2225ca;
+  color: #17C4E1;
 }
 
 
 .menu-for-lap{
-  color: darkcyan;
+  color: #17C4E1;
   text-decoration: none;
 }
 
-.My-sol{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-}
 
 .html{
   text-decoration: none;
@@ -80,6 +75,7 @@ nav .links {
   font-size: 36px;
   text-decoration: none;
   color: white;
+  font-family: sans-serif;
 }
 
 .pdf1{
