@@ -100,11 +100,6 @@ body{
     text-align: center;
 }
 
-.str2{
-    text-align: center;
-}
-
-
 .w3-web{
    color: white;
    font-size: 27px;
@@ -119,4 +114,10 @@ body{
 
 .youtube-channels{
   text-align: center;
+}
+
+.str2{
+  font-size: 27px;
+  text-align: center;
+  color: white;
 }
