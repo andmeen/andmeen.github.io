@@ -114,7 +114,7 @@ a {
 
 .footer {
 	width: 100%;
-	background: #00121b;
+	background: #20C668	;
 	display: block;
  }
 
@@ -208,7 +208,7 @@ li i {
 
 .footer-bottom {
 	padding: 10px;
-	background: #00121b;
+	background: #20C668;
 	color: #fff;
 	font-size: 12px;
 	text-align: center;
@@ -229,5 +229,10 @@ li i {
 		width: 100%;
 	}
 }
+
+.icon{
+	color: white;
+	font-size: 23px;
+  }
 
 /* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
