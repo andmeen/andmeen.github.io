@@ -125,6 +125,12 @@ a {
 }
 
 
+.website{
+  font-size: 40px;
+  color: #101010;
+  text-align: center;
+  text-decoration: #482ff7;  
+}
 
 
 /* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
