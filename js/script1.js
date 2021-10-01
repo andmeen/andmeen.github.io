@@ -1,12 +1,7 @@
-var mobileMenuBtn = document.querySelector("#mobile-menu-btn");
-var mobileMenu = document.querySelector(".mobile-menu");
-mobileMenuBtn.addEventListener("click", () => {
-  if (mobileMenu.style.display === "none") {
-    mobileMenu.style.display = "flex";
-    mobileMenuBtn.innerHTML = "Close";
-  } 
-  else {
-    mobileMenu.style.display = "none";
-    mobileMenuBtn.innerHTML = "Menu";
-  }
-});
+const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
