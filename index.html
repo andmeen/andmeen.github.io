@@ -11,22 +11,41 @@
     <title>HOST | هوست</title>
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">HOST <img width="20px" src="img/WhatsApp Image 2021-09-07 at 1.01.31 PM.jpeg"> </div>
+  <!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+    </ul>
   </div>
-  <input type="checkbox" id="menu-toggle"></input>
-  <label class="hamburger-wrapper" for="menu-toggle">
-    <span class="burger-label">Menu</span>
-    <span class="hamburger"></span>
-  </label>
-  <nav>
-    <div class="spacer"></div>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Shop</a>
-    <a href="#">Contact</a>
-    <div class="spacer"></div>
-  </nav>
+</nav>
+
 <script src="js/script1.js"></script>
 </body>
 </html>

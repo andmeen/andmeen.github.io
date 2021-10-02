@@ -1,177 +1,164 @@
-/*Make html and body elements have height 100% to allow children to have height set to the window height.. vh units could be used instead but are buggier*/
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
 
-html {
-  height: 100%;
-}
-
-body {
-  background: #EEE;
-  font-family: sans-serif;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar {
-  background: #2196f3;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  height: 56px;
-  position: fixed;
-  width: 100%;
-}
-
-.logo {
-  color: #FFF;
-  font-size: 20px;
-  line-height: 56px;
-  margin: 0 16px;
-}
-/*Menu Button*/
-
-.hamburger-wrapper {
-  cursor: pointer;
-  display: block;
-  height: 24px;
-  padding: 12px;
-  position: fixed;
-  right: 4px;
-  top: 4px;
-  -webkit-transition: background .3s;
-  transition: background .3s;
-  width: 90px;
-  z-index: 2;
-}
-
-.burger-label {
-  color: #FFF;
-  font-size: 20px;
-  line-height: 24px;
-  -webkit-touch-callout: none;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-/*Hamburger*/
-
-.hamburger,
-.hamburger:before,
-.hamburger:after {
-  background: #FFF;
-  display: block;
-  height: 2px;
-  position: absolute;
-  width: 24px;
-}
-
-.hamburger {
-  top: 22px;
-  left: 78px;
-  -webkit-transition: background .3s;
-  transition: background .3s;
-}
-
-.hamburger:before,
-.hamburger:after {
-  content: "";
-}
-
-.hamburger:before {
-  top: -5px;
-  -webkit-transition: top .3s, transform .3s;
-  transition: top .3s, transform .3s;
-}
-
-.hamburger:after {
-  bottom: -5px;
-  -webkit-transition: bottom .3s, transform .3s;
-  transition: bottom .3s, transform .3s;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-#menu-toggle:checked + .hamburger-wrapper {
-  background: #FFF;
-}
-
-#menu-toggle:checked + label .burger-label {
-  color: #000;
-}
-
-#menu-toggle:checked + label .hamburger {
-  background: rgba(0, 0, 0, 0);
-}
-
-#menu-toggle:checked + label .hamburger:before {
-  background: #000;
-  top: 0;
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-#menu-toggle:checked + label .hamburger:after {
-  background: #000;
-  bottom: 0;
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-/*Nav Links*/
-
-nav {
-  background: rgba(255, 255, 255, 255);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
-  height: 100%;
-  left: 100%;
-  position: fixed;
-  width: 60%;
-  width: calc(240px);
-  top: 0;
-  -webkit-transition: left .3s;
-  transition: left .3s;
-  z-index: 1;
-}
-/*Padding alone doesn't calculate quite right and affects the animation because they aren't calculated as part of the height even with border-box sizing so I'm forced to add a div just for styling*/
-
-.spacer {
-  height: 56px;
-  width: 100%;
-}
-
-nav a {
-  color: rgba(0, 0, 0, 1);
-  display: block;
-  height: 48px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 48px;
-  overflow: hidden;
-  text-align: center;
-  text-decoration: none;
-}
-
-nav a:hover {
-  background: #EEE;
-}
-
-#menu-toggle:checked ~ nav {
-  left: 40%;
-  left: calc(100% - 240px);
-  overflow-y: scroll;
-}
-
-.filler {
-  background: white;
-  border: 1px solid blue;
-  height: 200px;
-  margin: 20px auto;
-  text-align: center;
-  max-width: 800px;
-  width: 90%;
-}
+ body
+ {
+   margin: 0;
+   padding: 0;
+   
+   /* make it look decent enough */
+   background: #232323;
+   color: #cdcdcd;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 50px;
+   left: 50px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: tomato;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #cdcdcd;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+ 
