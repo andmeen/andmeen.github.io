@@ -1,216 +1,177 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
+/*Make html and body elements have height 100% to allow children to have height set to the window height.. vh units could be used instead but are buggier*/
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #EEE;
+  font-family: sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
-header
-{
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.navbar {
+  background: #2196f3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  height: 56px;
+  position: fixed;
   width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-header .logo
-{
-  color: #fff;
-  text-transform: uppercase;
+
+.logo {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 56px;
+  margin: 0 16px;
+}
+/*Menu Button*/
+
+.hamburger-wrapper {
   cursor: pointer;
-}
-.toggle
-{
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-}
-.toggle.active
-{
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
-}
-.showcase
-{
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-  transition: 0.5s;
+  display: block;
+  height: 24px;
+  padding: 12px;
+  position: fixed;
+  right: 4px;
+  top: 4px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+  width: 90px;
   z-index: 2;
 }
-.showcase.active
-{
-  right: 300px;
+
+.burger-label {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-touch-callout: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*Hamburger*/
+
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+  background: #FFF;
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 24px;
 }
 
-.showcase video
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-}
-.overlay
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #03a9f4;
-  mix-blend-mode: overlay;
-}
-.text
-{
-  position: relative;
-  z-index: 10;
+.hamburger {
+  top: 22px;
+  left: 78px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
-.text h2
-{
-  font-size: 5em;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
+.hamburger:before,
+.hamburger:after {
+  content: "";
 }
-.text h3
-{
-  font-size: 4em;
+
+.hamburger:before {
+  top: -5px;
+  -webkit-transition: top .3s, transform .3s;
+  transition: top .3s, transform .3s;
+}
+
+.hamburger:after {
+  bottom: -5px;
+  -webkit-transition: bottom .3s, transform .3s;
+  transition: bottom .3s, transform .3s;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .hamburger-wrapper {
+  background: #FFF;
+}
+
+#menu-toggle:checked + label .burger-label {
+  color: #000;
+}
+
+#menu-toggle:checked + label .hamburger {
+  background: rgba(0, 0, 0, 0);
+}
+
+#menu-toggle:checked + label .hamburger:before {
+  background: #000;
+  top: 0;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + label .hamburger:after {
+  background: #000;
+  bottom: 0;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/*Nav Links*/
+
+nav {
+  background: rgba(255, 255, 255, 255);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
+  height: 100%;
+  left: 100%;
+  position: fixed;
+  width: 60%;
+  width: calc(240px);
+  top: 0;
+  -webkit-transition: left .3s;
+  transition: left .3s;
+  z-index: 1;
+}
+/*Padding alone doesn't calculate quite right and affects the animation because they aren't calculated as part of the height even with border-box sizing so I'm forced to add a div just for styling*/
+
+.spacer {
+  height: 56px;
+  width: 100%;
+}
+
+nav a {
+  color: rgba(0, 0, 0, 1);
+  display: block;
+  height: 48px;
+  font-size: 16px;
   font-weight: 700;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.text p
-{
-  font-size: 1.1em;
-  color: #fff;
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-}
-.text a
-{
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #111;
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
-.text a:hover
-{
-  letter-spacing: 6px;
-}
-.social
-{
-  position: absolute;
-  z-index: 10;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social li
-{
-  list-style: none;
-}
-.social li a
-{
-  display: inline-block;
-  margin-right: 20px;
-  filter: invert(1);
-  transform: scale(0.5);
-  transition: 0.5s;
-}
-.social li a:hover
-{
-  transform: scale(0.5) translateY(-15px);
-}
-.menu
-{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu ul
-{
-  position: relative;
-}
-.menu ul li
-{
-  list-style: none;
-}
-.menu ul li a
-{
-  text-decoration: none;
-  font-size: 24px;
-  color: #111;
-}
-.menu ul li a:hover
-{
-  color: #03a9f4; 
-}
-
-@media (max-width: 991px)
-{
-  .showcase,
-  .showcase header
-  {
-    padding: 40px;
-  }
-  .text h2
-  {
-    font-size: 3em;
-  }
-  .text h3
-  {
-    font-size: 2em;
-  }
-}
-.My-sol{
-  font-size: 36px;
-  text-decoration: none;
-  color: white;
-  font-family: sans-serif;
-}
-
-.hello{
+  line-height: 48px;
+  overflow: hidden;
   text-align: center;
-  color: white;
-  font-family: sans-serif;
-  font-size: 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #EEE;
+}
+
+#menu-toggle:checked ~ nav {
+  left: 40%;
+  left: calc(100% - 240px);
+  overflow-y: scroll;
+}
+
+.filler {
+  background: white;
+  border: 1px solid blue;
+  height: 200px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 800px;
+  width: 90%;
 }
