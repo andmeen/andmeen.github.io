@@ -166,6 +166,7 @@ body {
   z-index: 1;
   left: 0;
   top: 0;
+  color: #aaa;
   height: 100%;
   width: 100%;
   font-size: 16px;
@@ -199,6 +200,7 @@ body {
   padding: 10px 20px;
   background: #fff;
   font-size: 40px;
+  background: #2383EB;
 }
 
 .modal-footer {
