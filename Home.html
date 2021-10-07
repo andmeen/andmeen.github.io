@@ -10,79 +10,44 @@
 </head>
 <body>
   <!-- القائمة -->
-  <header class="header-fixed">
-
-    <div class="header-limiter">
-  
-      <h1><a href="https://github.com/andmeen/andmeen.github.io">andmeen<span></span></a></h1>
-  
-      <nav>
-        <a href="#">الرئيسية</a>
-        <a href="#" class="selected">Blog</a>
-        <a href="#">Pricing</a>
-        <a href="#">About</a>
-        <a href="#">Faq</a>
-        <a href="#">Contact</a>
-      </nav>
-  
-    </div>
-  
-  </header>
-  
-  <!-- You need this element to prevent the content of the page from jumping up -->
-  <div class="header-fixed-placeholder"></div>
-  
-  <!-- The content of your page would go here. -->
-  
-  
-  
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script>
-  
-    $(document).ready(function(){
-  
-      var showHeaderAt = 150;
-  
-      var win = $(window),
-          body = $('body');
-  
-      // Show the fixed header only on larger screen devices
-  
-      if(win.width() > 400){
-  
-        // When we scroll more than 150px down, we set the
-        // "fixed" class on the body element.
-  
-        win.on('scroll', function(e){
-  
-          if(win.scrollTop() > showHeaderAt) {
-            body.addClass('fixed');
-          }
-          else {
-            body.removeClass('fixed');
-          }
-        });
-  
-      }
-  
-    });
-  
-  </script>
-  
-  
-  <!-- Demo ads. Please ignore and remove. -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="https://github.com/andmeen/" target="_blank" class="nav-logo">andmeen.</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="Home.html" class="nav-link"><img width="16px" src="img/home.svg">     الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https:andmeen.github.io/" target="_blank" class="nav-link"><img width="16px" src="img/global.svg">    موقعي لتعليم البرمجة</a>
+                </li>
+                <li class="nav-item">
+                    <a href="me.html" class="nav-link"><img width="16px" src="img/follow.svg">    تابعني</a>
+                </li>
+                <li class="nav-item">
+                  <a href="shop.html" class="nav-link"><img width="16px" src="img/shopping-cart.svg">    متجري <br></a><br>
+              </li>
+              <button type="button" class="btn-toggleMode">
+                <i class="fas fa-moon"></i>Dark Mode
+              </button>    
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header><br>
     <!-- تعريف عني -->
       <h1 class="hello1">مرحبا بك في</h1>
-      <h1 class="hello2">andmeen</h1><hr>
+      <h1 class="hello2">andmeen</h1><br><hr><br>
 
       <h1 class="hello2">هلا والله انا امين</h1>
-      <h1 class="hello1">انا مبرمج ويب</h1>
-      <h1 class="hello1">بديت اتعلم البرمجة وانا عمري 10 سنين</h1><hr>
+      <h1 class="hello1">انا مبرمج ويب</h1><br>
+      <h1 class="hello1">بديت اتعلم البرمجة وانا عمري 10 سنين</h1><hr><br>
       <h1 class="hello1">الحمدالله عندي موقعين</h1>
       <h1 class="hello1">وعندي متجر</h1>
-       <h1 class="hello1">اسوي للناس مواقع</h1><hr>
-      <h1 class="hello1">اذا تبغى اسوي لك موقع اتواصل معي على الايميل</h1><hr>
+       <h1 class="hello1">اسوي للناس مواقع</h1><br><hr><br>
+      <h1 class="hello1">اذا تبغى اسوي لك موقع اتواصل معي على الايميل</h1><br><hr><br>
       <center><button id="modal-btn" class="button">انقر هنا</button>
    <!-- ملاحظة -->
       <div id="my-modal" class="modal">
