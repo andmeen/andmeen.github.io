@@ -53,6 +53,7 @@ a {
   max-height: 0;
   transition: max-height .2s ease-out;
   font-size: 20px;
+  height: 350px;
 }
 
 /* menu icon */
