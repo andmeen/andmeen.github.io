@@ -52,6 +52,7 @@ a {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
+  font-size: 20px;
 }
 
 /* menu icon */
