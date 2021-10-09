@@ -51,7 +51,8 @@ a {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  font-size: 20px;
+  font-size: 26px;
+  height: 140;
 }
 
 /* menu icon */
