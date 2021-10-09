@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 a {
@@ -29,13 +29,12 @@ a {
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+ color: #2383EB;
 }
 
 .header .logo {
@@ -53,7 +52,6 @@ a {
   max-height: 0;
   transition: max-height .2s ease-out;
   font-size: 20px;
-  height: 350px;
 }
 
 /* menu icon */
@@ -121,6 +119,9 @@ a {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+.logoimage{
+    width: 130px;
+}
 
 /* 48em = 768px */
 
@@ -139,4 +140,23 @@ a {
   .header .menu-icon {
     display: none;
   }
+  .Home{
+      order: 1;
+  }
+  .projects{
+      order: 2;
+  }
+  .aboutme{
+      order: 3;
+  }
+  .contactme{
+      order: 4;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.menu{
+  display: flex;
+  flex-direction: column-reverse;
+}
 }
