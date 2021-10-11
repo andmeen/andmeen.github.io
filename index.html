@@ -9,41 +9,27 @@
     <title>الصفحة الرئيسية andmeen</title>
 </head>
 <body>
-	<nav class="nav">
-    <div class="container">
-        <div class="logo">
-            <a href="https://github.com/andmeen">andmeen</a>
-        </div>
-        <div id="mainListDiv" class="main_list">
-            <ul class="navlinks">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">موقعي لتعليم البرمجة</a></li>
-                <li><a href="#">متجري</a></li>
-                <li><a href="#">English</a></li>
-            </ul>
-        </div>
-        <span class="navTrigger">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-        </span>
-    </div>
-</nav>
-
-<section class="home">
-</section>
-<div style="height: 1000px">
-    <!-- just to make scrolling effect possible -->
-  <h2 class="myH2"></h2>
-  <p class="myP"></p>
-  <p class="myP"></p>
-  <p class="myP"></p>
-    <p class="myP">
-    
-   </p>
-</div>
-
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="https://github.com/andmeen/" target="_blank" class="home-link">
+        <!-- <div class="navbar-logo"></div> -->
+       andmeen
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="index.html">الرئيسية</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="Home.html" target="_blank">موقعي الثاني</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="shop.html">متجري</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="">English</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 <!-- Jquery needed -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/script1.js"></script>

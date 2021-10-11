@@ -1,16 +1,14 @@
-$('.navTrigger').click(function () {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
+const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
 
-});
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
 
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-        $('.nav').addClass('affix');
-        console.log("OK");
-    } else {
-        $('.nav').removeClass('affix');
-    }
-});
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
