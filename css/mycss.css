@@ -1,110 +1,326 @@
-body{
-  background: linear-gradient(to right, #372FCE , #DD1E1E);
-  font-family: sans-serif;
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+ body
+ {
+   margin: 0;
+   padding: 0;
+   
+   /* make it look decent enough */
+   background: white;
+   color: black;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 50px;
+   left: 50px;
+   text-align: right;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: black;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: tomato;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: black;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+
+ section {
+  padding: 60px 0;
+  min-height: 100vh;
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  transition: 0.5 s;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 30px;
-  color: white;
-  height: 8vh;
-}
-nav .links {
-  display: flex;
-}
-.links p{
-  padding: 10px;
-}
-#mobile-menu-btn {
-  display: none;
-}
-.mobile-menu {
-  color: white;
-  display: none;
-  position: absolute;
-  right: 0;
-  height: 60vh;
-  width: 70vw;
-  background-color: white;
-}
-
-
-@media (max-width: 600px) {
-  #mobile-menu-btn {
-    display: block;
-  }
-  nav p {
-    display: none;
-  }
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-
-
-.mob{
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
-  color: #17C4E1;
+  outline: none;
 }
 
-
-.menu-for-lap{
-  color: #17C4E1;
+a,
+a:active,
+a:focus {
+  color: #6f6f6f;
   text-decoration: none;
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+  -ms-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
 }
 
-.My-sol{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+.main-title {
+margin-bottom: 50px;
+text-align: center;
 }
 
-.html{
-  text-decoration: none;
-  color: orange;
-  font-size: 29px;
+.main-title h1 {
+font-size: 35px;
+font-weight: 700;
+margin-bottom: 15px;
 }
 
-.css{
-  text-decoration: none;
-  color: #17C4E1;
-  font-size: 29px;
+.main-title h2 {
+font-size: 28px;
+font-weight: 600;
+margin-bottom: 5px;
 }
 
-.js{
-  text-decoration: none;
-  color: gray;
-  font-size: 29px;
+.main-title p{
+font-size: 18px;
+margin-bottom: 0;
+}
+.pricing {
+text-align: center;
+margin-bottom: 30px;
+position: relative;
+z-index: 9;
+box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
 
-.for-hl-cs-js{
-  font-size: 29px;
+.pricing .price-header {
+width: 100%;
+background: #fff;
+padding: 35px 20px;
 }
 
-.program{
-  font-size: 29px;
+.pricing .price-header .title {
+margin: 0 0 10px;
+font-size: 20px;
+font-weight: 600;
+color: #37404d;
 }
 
-.My-sol{
-  font-size: 36px;
-  text-decoration: none;
-  color: white;
-  font-family: sans-serif;
+.pricing .price-header .price {
+font-size: 35px;
+font-weight: 300;
+margin: 0;
+color: #37404d;
 }
 
-.we{
-  text-decoration: none;
-  color: white;
-  font-size: 29px;
+.pricing .content {
+padding: 20px 20px 30px;
+background: #f9f9f9;
+}
+
+.pricing .content ul {
+margin: 0 0 20px;
+}
+
+.pricing .content ul li {
+padding: 8px 0;
+font-size: 16px;
+color: #656565;
+}
+
+.pricing.featured .listing-badges {
+position: absolute;
+top: 0;
+z-index: 999;
+right: 0;
+width: 100%;
+display: block;
+font-size: 15px;
+padding: 0;
+overflow: hidden;
+height: 100px;
+}
+
+.pricing.featured .featured {
+float: left;
+transform: rotate(-45deg);
+left: -67px;
+top: 17px;
+position: relative;
+text-align: center;
+width: 200px;
+font-size: 13px;
+margin: 0;
+padding: 7px 10px;
+font-weight: 500;
+color: #fff;
+}
+.pricing.featured .featured {
+background: #f0151f;
+}
+.btn-outline {
+border: solid 1px #f0151f;
+color: #f0151f;
+}
+
+.btn-outline:hover {
+border: solid 1px #dc141d;
+background: #dc141d;
+color: #fff;
+}
+.button-theme {
+background: #f0151f;
+color: #FFF !important;
+}
+
+.button-theme:hover {
+background: #dc141d;
+color: #fff;
+}
+
+.pricing-btn {
+padding: 7px 25px 5px;
+border-radius: 2px;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 1.5px;
+text-transform: uppercase;
 }
