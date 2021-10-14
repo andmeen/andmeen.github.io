@@ -324,3 +324,7 @@ font-weight: 500;
 letter-spacing: 1.5px;
 text-transform: uppercase;
 }
+
+.menu-text{
+  font-size: 20px;
+}

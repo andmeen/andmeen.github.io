@@ -149,3 +149,7 @@ body
  {
    transform: none;
  }
+
+.menu-text{
+  font-size: 22px;
+}
