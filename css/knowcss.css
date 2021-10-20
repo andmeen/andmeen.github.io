@@ -149,3 +149,12 @@ transition: all 0.4s ease 0s;
 		display:block;
 	}
 }
+
+
+.pdf{
+	font-size: 30px;
+	border: 5px lightskyblue solid;
+	background-color: maroon;
+	color: white;
+	text-decoration: none;
+}
