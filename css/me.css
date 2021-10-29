@@ -1,159 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1344 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4em;
+  background-color: #141414;
+}
 
- i {
-	margin-right: 10px;
+*{
+	margin:0;
+	padding:0;
+  }
+  body {
+	  font-family: Helvetica, Arial, sans-serif;
+	font-size:16px;
+    background-color: #512CF3;
+  }
+
+.snip1344 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
-/*----------bootstrap-navbar-css------------*/
-.navbar-logo{
-	padding: 15px;
-	color: #fff;
+.snip1344 .background {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.2;
+  -webkit-filter: grayscale(100%) blur(10px);
+  filter: grayscale(100%) blur(10px);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
 }
-.navbar-mainbg{
-	background-color: #5161ce;
-	padding: 0px;
+.snip1344 figcaption {
+  width: 100%;
+  padding: 15px 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
-#navbarSupportedContent{
-	overflow: hidden;
-	position: relative;
+.snip1344 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
-#navbarSupportedContent ul{
-	padding: 0px;
-	margin: 0px;
+.snip1344 h3 {
+  margin: 0 0 5px;
+  font-weight: 400;
 }
-#navbarSupportedContent ul li a i{
-	margin-right: 10px;
+.snip1344 h3 span {
+  display: block;
+  font-size: 0.6em;
+  color: #f39c12;
+  opacity: 0.75;
 }
-#navbarSupportedContent li {
-	list-style-type: none;
-	float: left;
+.snip1344 i {
+  padding: 10px 5px;
+  display: inline-block;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.65;
 }
-#navbarSupportedContent ul li a{
-	color: rgba(255,255,255,0.5);
-    text-decoration: none;
-    font-size: 15px;
-    display: block;
-    padding: 20px 20px;
-    transition-duration:0.6s;
-	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    position: relative;
+.snip1344 a {
+  text-decoration: none;
 }
-#navbarSupportedContent>ul>li.active>a{
-	color: #5161ce;
-	background-color: transparent;
-	transition: all 0.7s;
+.snip1344 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
-#navbarSupportedContent a:not(:only-child):after {
-	content: "\f105";
+.snip1344:hover .background,
+.snip1344.hover .background {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+
+.mobile-menu {
+	display:block;
+	width:100%;
+  background: #0D7BF2;
+  line-height: 1.6em;
+  font-weight: 400;
+  width:100%;
+  font-size: 20px;
+  text-align:center;
+	  position: relative;
+	margin:0 auto;
+  }
+  /*Strip the ul of padding and list styling*/
+  .mobile-menu ul {
+	  list-style-type:none;
+	margin: 0 auto;
+	padding-left:0;
+	text-align:center;
+	width:100%;
 	position: absolute;
-	right: 20px;
-	top: 10px;
-	font-size: 14px;
-	font-family: "Font Awesome 5 Free";
-	display: inline-block;
-	padding-right: 3px;
-	vertical-align: middle;
-	font-weight: 900;
-	transition: 0.5s;
-}
-#navbarSupportedContent .active>a:not(:only-child):after {
-	transform: rotate(90deg);
-}
-.hori-selector{
-	display:inline-block;
-	position:absolute;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	transition-duration:0.6s;
-	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	background-color: #fff;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	margin-top: 10px;
-}
-.hori-selector .right,
-.hori-selector .left{
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	background-color: #fff;
-	bottom: 10px;
-}
-.hori-selector .right{
-	right: -25px;
-}
-.hori-selector .left{
-	left: -25px;
-}
-.hori-selector .right:before,
-.hori-selector .left:before{
-	content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #5161ce;
-}
-.hori-selector .right:before{
-	bottom: 0;
-    right: -25px;
-}
-.hori-selector .left:before{
-	bottom: 0;
-    left: -25px;
+	background: #0D7BF2;
+  }
+  
+  /*Create a horizontal list with spacing*/
+  .mobile-menu li {
+	  display:inline-block;
+	  /*float: left;
+	  margin-right: 1px;*/
+  }
+  
+  /*Style for menu links*/
+  .mobile-menu li a {
+	  display:block;
+	  min-width:140px;
+	  text-align: center;
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  color: #fff;
+	text-transform:uppercase;
+	  background: #0D7BF2;
+	  text-decoration: none;
+	margin-left:-5px;
+	padding: 10px 0;  
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  }
+  
+  /*Hover state for top level links*/
+  .mobile-menu li:hover a {
+	  color: black;
+	background-color:#ccddee;
+  }
+  
+  /*Style for dropdown links*/
+  .mobile-menu li:hover ul a {
+	  background: #f3f3f3;
+	  color: #2f3036;
+	  height: 40px;
+	  line-height: 40px;
+  }
+  
+  /*Hover state for dropdown links*/
+  .mobile-menu li:hover .mobile-menu ul a:hover {
+	  color: #0D7BF2;
+  }
+  
+  /*Hide dropdown links until they are needed*/
+  .mobile-menu li ul {
+	  display: none;
+  }
+  
+  /*Make dropdown links vertical*/
+  .mobile-menu li ul li {
+	  display: block;
+	  float: none;
+  }
+  
+  /*Prevent text wrapping*/
+  .mobile-menu li ul li a {
+	  width: auto;
+	  min-width: 100px;
+	  padding: 0 20px;
+  }
+  
+  
+  /*Style 'show menu' label button and hide it by default*/
+  .mobile-menu .show-menu {
+	  text-decoration: none;
+	  color: #fff;
+	  background: #0D7BF2;
+	  text-align: center;
+	  padding: 10px 15px;
+	  display: none;
+	cursor: pointer;
+	text-transform: uppercase;
+  }
+  
+  .mobile-menu .show-menu span{
+	 padding-left: 25px;
+  }
+  
+  /*Hide checkbox*/
+  .mobile-menu input[type=checkbox]{
+	  display: none;
+  }
+  
+  /*Show menu when invisible checkbox is checked*/
+  .mobile-menu input[type=checkbox]:checked ~ #menu{
+	  display: block;
+  }
+  
+  /*Responsive Styles*/
+  
+  @media screen and (max-width : 800px){
+	.mobile-menu .lines {
+	  border-bottom: 15px double #f8f8f8; 
+	  border-top: 5px solid #f8f8f8; 
+	  content:"";
+	  height: 5px; 
+	  width:20px;
+	  padding-right:15px;
+	float: right;
+  }
+	  /*Make dropdown links appear inline*/
+	  .mobile-menu ul {
+		  position: static;
+		  display: none;
+	  }
+	  /*Create vertical spacing*/
+	  .mobile-menu li {
+		  margin-bottom: 1px;
+	  }
+	  /*Make all menu links full width*/
+	  .mobile-menu ul li, .mobile-menu li a {
+		  width: 100%;
+	  }
+	  /*Display 'show menu' link*/
+	  .mobile-menu .show-menu {
+		  display:block;
+	  }
+  }
+
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 
-
-@media(min-width: 992px){
-	.navbar-expand-custom {
-	    -ms-flex-flow: row nowrap;
-	    flex-flow: row nowrap;
-	    -ms-flex-pack: start;
-	    justify-content: flex-start;
-	}
-	.navbar-expand-custom .navbar-nav {
-	    -ms-flex-direction: row;
-	    flex-direction: row;
-	}
-	.navbar-expand-custom .navbar-toggler {
-	    display: none;
-	}
-	.navbar-expand-custom .navbar-collapse {
-	    display: -ms-flexbox!important;
-	    display: flex!important;
-	    -ms-flex-preferred-size: auto;
-	    flex-basis: auto;
-	}
-}
-
-
-@media (max-width: 991px){
-	#navbarSupportedContent ul li a{
-		padding: 12px 30px;
-	}
-	.hori-selector{
-		margin-top: 0px;
-		margin-left: 10px;
-		border-radius: 0;
-		border-top-left-radius: 25px;
-		border-bottom-left-radius: 25px;
-	}
-	.hori-selector .left,
-	.hori-selector .right{
-		right: 10px;
-	}
-	.hori-selector .left{
-		top: -25px;
-		left: auto;
-	}
-	.hori-selector .right{
-		bottom: -25px;
-	}
-	.hori-selector .left:before{
-		left: -25px;
-		top: -25px;
-	}
-	.hori-selector .right:before{
-		bottom: -25px;
-		left: -25px;
-	}
+.my-float{
+	margin-top:16px;
 }
