@@ -168,3 +168,11 @@
 .my-float{
 	margin-top:16px;
 }
+
+#test{
+	border-width: 2px;
+	border-bottom-style: solid;
+	font-size: 40px;
+	color: #337CFF;
+	text-align: center;
+}
