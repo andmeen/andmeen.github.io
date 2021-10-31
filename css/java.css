@@ -168,3 +168,27 @@
 .my-float{
 	margin-top:16px;
 }
+
+.pdf{
+	font-size: 30px;
+	border: 5px lightskyblue solid;
+	background-color: maroon;
+	color: white;
+	text-decoration: none;
+}
+
+.my-youtube{
+	color: white;
+	background-color: #337CFF;
+	font-size: 30px;
+	text-decoration: none;
+	border: 5px #337CFF solid;
+}
+
+#js{
+	border-width: 2px;
+	border-bottom-style: solid;
+	font-size: 40px;
+	color: #337CFF;
+	text-align: center;
+}
