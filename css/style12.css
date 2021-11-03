@@ -190,3 +190,7 @@ transition: all 0.4s ease 0s;
 .my-float{
 	margin-top:16px;
 }
+
+.hr{
+	border: 2px #0D7BF2 solid;
+}

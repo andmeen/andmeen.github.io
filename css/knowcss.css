@@ -197,4 +197,10 @@
 .video{
 	border: 5px #0D7BF2 solid;
 	border-radius: 10px;
+	margin-left: 10px;
+}
+
+
+.hr{
+	border: 2px #0D7BF2 solid;
 }
