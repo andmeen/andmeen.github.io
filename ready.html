@@ -22,23 +22,180 @@
 
         <h1 style="color: #0D7BF2; text-align: center; font-size: 40px;">قوالب جاهزة</h1><br><br><br>
 
-
         <!-- pro-1 -->
-        <h1>Popup: Nightly</h1> <br><br>
+        <h1>CSS radio buttons</h1> <br><br>
         <p class="code-1">html</p><br><br>
-            <pre>
-            
-            </pre><br><hr><br>
+        <!-- HTML -->
+        <pre>
+          
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;CSS radio buttons&lt;/title&gt;
+    &lt;/head&gt;
+      &lt;body&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+     &lt;input type="radio" id="f-option" name="selector"&gt;
+     &lt;label for="f-option"&gt;Pizza&lt;/label&gt;
 
+      &lt;div class="ckeck"&gt;&lt;/div&gt;
+      &lt;/li&gt; 
+          </pre><br><br><h1 class="hr"></h1><br>
+
+          <!-- CSS -->
           <p class="code-1">css</p><br><br>
-           
-          <p class="code-1">
+          <pre>
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-          </p><br><hr><br>
+body, html{
+     height: 100%;
+     background: #222222;
+	    font-family: 'Lato', sans-serif;
+}
+         
+ .container ul{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     overflow: auto;
+}
+        
+  ul li{
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #333;
+}
+        
+  ul li input[type=radio]{
+     position: absolute;
+     visibility: hidden;
+}
+        
+  ul li label{
+    display: block;
+    position: relative;
+    font-weight: 300;
+    font-size: 1.35em;
+    padding: 25px 25px 25px 80px;
+    margin: 10px auto;
+    height: 30px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+}
+        
+  ul li:hover label{
+    color: #FFFFFF;
+}
+        
+  ul li .check{
+    display: block;
+    position: absolute;
+    border: 5px solid #AAAAAA;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 30px;
+    left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+        
+  ul li:hover .check {
+    border: 5px solid #FFFFFF;
+}
+        
+  ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    left: 5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+        
+  input[type=radio]:checked ~ .check {
+    border: 5px solid #0DFF92;
+}
+        
+  input[type=radio]:checked ~ .check::before{
+     background: #0DFF92;
+}
+        
+  input[type=radio]:checked ~ label{
+    color: #0DFF92;
+}
+        
+  .signature {
+     margin: 10px auto;
+     padding: 10px 0;
+      width: 100%;
+}
+        
+   .signature p{
+      text-align: center;
+      font-family: Helvetica, Arial, Sans-Serif;
+      font-size: 0.85em;
+      color: #AAAAAA;
+}
+        
+   .signature .much-heart{
+     display: inline-block;
+     position: relative;
+     margin: 0 4px;
+     height: 10px;
+     width: 10px;
+     background: #AC1D3F;
+     border-radius: 4px;
+     -ms-transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
+        
+  .signature .much-heart::before, 
+  .signature .much-heart::after {
+      display: block;
+      content: '';
+      position: absolute;
+      margin: auto;
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      background: #AC1D3F;
+      top: -4px;
+}
+        
+  .signature .much-heart::after {
+      bottom: 0;
+      top: auto;
+      left: -4px;
+}
+        
+  .signature a {
+     color: #AAAAAA;
+     text-decoration: none;
+     font-weight: bold;
+}
+      </pre><br><br><h1 class="hr"></h1><br>
 
-          <p class="code-1">javascript</p><br><br>
-
-          <p class="code-1"></p><br><hr><br>
+      <!-- JS -->
+      <p class="code-1">javascript</p><br><br>
+      <pre>
+  لا يوجد
+  nothing
+      </pre><br><br><h1 class="hr"></h1><br>
+         
 
 
 
