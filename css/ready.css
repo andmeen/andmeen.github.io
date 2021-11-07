@@ -195,7 +195,7 @@
     font-size: 30px;
   }
 
-h1,p { font:500 36px sans-serif; } p {font-size:16px;}div { display: inline-block; width: 100px; font-family: sans-serif; } svg { max-width:100px; path { fill: olive; } circle { fill: tomato } } pre { padding:16px; background-color: whitesmoke; border-radius:5px;border:1px solid #ccc;} pre { font-size:15px;}
+h1,p { font:500 36px sans-serif; } p {font-size:16px;}div { display: inline-block; width: 100px; font-family: sans-serif; } svg { max-width:100px;  { fill: olive; } circle { fill: tomato } } pre { padding:16px; background-color: whitesmoke; border-radius:5px;border:1px solid #ccc;} pre { font-size:15px;}
 
 .hr{
 	border: 2px #0D7BF2 solid;
