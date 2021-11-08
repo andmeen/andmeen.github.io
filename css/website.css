@@ -233,7 +233,7 @@
     height: 180px;
     width: 180px;
     border: 1px solid white;
-    background-image: linear-gradient(to right top, #3F0608, #124FEB);
+    background-color: #2C79F3;
     position: absolute;
     transform: scale(0) rotate(-180deg);
     padding: 14px;
