@@ -148,6 +148,8 @@ transition: all 0.4s ease 0s;
 	.mobile-menu .show-menu {
 		display:block;
 	}
+
+	
 }
  section {
   padding: 60px 0;
@@ -184,10 +186,6 @@ ul {
   padding: 0;
   list-style: none;
 }
-img {
-max-width: 100%;
-height: auto;
-}
 .main-title {
 margin-bottom: 50px;
 text-align: center;
@@ -218,7 +216,6 @@ box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
 
 .pricing .price-header {
-width: 100%;
 background: #fff;
 padding: 35px 20px;
 }
@@ -249,7 +246,7 @@ margin: 0 0 20px;
 .pricing .content ul li {
 padding: 8px 0;
 font-size: 16px;
-color: #656565;
+color: black;
 }
 
 .pricing.featured .listing-badges {
