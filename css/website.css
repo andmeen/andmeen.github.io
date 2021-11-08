@@ -319,7 +319,9 @@
     color: white;
     transition: all 1s;
     cursor: pointer;
-    border: none
+    border: none;
+    width: 100px;
+    height: 60px;
 }
 
 button:hover {
