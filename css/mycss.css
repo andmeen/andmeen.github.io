@@ -326,3 +326,14 @@ text-transform: uppercase;
 .my-float{
 	margin-top:16px;
 }
+
+
+.title1{
+	color: black;
+	font-size: 30px;
+}
+
+.title1:hover{
+	color: #0D7BF2;
+	font-size: 40px;
+}
