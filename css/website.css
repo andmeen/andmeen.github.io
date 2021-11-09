@@ -195,7 +195,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .firstrow span:nth-child(1) {
@@ -215,11 +216,14 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor: pointer
+    cursor: pointer;
+    border: 4px #1B51DA solid;
+    border-radius: 3px;
+    margin-top: 5px;
 }
 
 .mediumrow img {
-    width: 180px;
+    width: 230px;
     height: 180px;
     padding: 12px 0px
 }
@@ -337,4 +341,5 @@ button:hover {
 .buy{
     text-decoration: none;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
