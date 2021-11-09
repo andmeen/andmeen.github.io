@@ -201,7 +201,7 @@
   z-index: 1;
   position: relative;
   padding: 10px;
-  border: 2px solid #e8b563;
+  border: 2px solid #2f3036;
 }
 
 .snip1515 .profile-image img {
@@ -211,7 +211,7 @@
 
 .snip1515 figcaption {
   width: 100%;
-  background-color: #2f3036;
+  background-color: #2C79F3;
   color: #555;
   padding: 125px 25px 25px;
   margin-top: -100px;
@@ -226,12 +226,13 @@
 
 .snip1515 h3 {
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 30px;
+  color: white;
   font-family: 'Playfair Display', Arial, sans-serif;
 }
 
 .snip1515 h4 {
-  color: #8c8c8c;
+  color: white;
   font-weight: 400;
   letter-spacing: 2px;
 }
