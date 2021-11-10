@@ -17,6 +17,8 @@
   text-align:center;
 	  position: relative;
 	margin:0 auto;
+  position: fixed;
+  z-index: 1;
   }
   /*Strip the ul of padding and list styling*/
   .mobile-menu ul {
@@ -1441,4 +1443,11 @@ p {
   .flipTimebox .flip-clock-divider.seconds .flip-clock-label {
     right: 14px;
   }
+}
+
+
+p{
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
 }
