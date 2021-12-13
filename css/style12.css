@@ -19,6 +19,8 @@
   text-align:center;
 	  position: relative;
 	margin:0 auto;
+	position: fixed;
+	z-index: 1;
   }
   /*Strip the ul of padding and list styling*/
   .mobile-menu ul {
@@ -204,7 +206,9 @@
 	  font-size: 40px;
   }
  
-  
-
-
-
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+  .animation_text h1{font-family: "Poppins", sans-serif;text-align: center;color: #373150;font-size: 90px;font-weight: 500}
+  .animation_text h1 span{color: #0D7BF2;}
+  @media(max-width:768px){
+	.animation_text h1{font-size:30px}
+  }

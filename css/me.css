@@ -20,6 +20,8 @@
   text-align:center;
 	  position: relative;
 	margin:0 auto;
+  position: fixed;
+  z-index: 1;
   }
   /*Strip the ul of padding and list styling*/
   .mobile-menu ul {
