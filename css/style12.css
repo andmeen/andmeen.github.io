@@ -208,7 +208,7 @@
  
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
   .animation_text h1{font-family: "Poppins", sans-serif;text-align: center;color: #373150;font-size: 90px;font-weight: 500}
-  .animation_text h1 span{color: #0D7BF2;}
+  .animation_text h1 span{color: #000;}
   @media(max-width:768px){
 	.animation_text h1{font-size:30px}
   }
