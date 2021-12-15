@@ -170,10 +170,37 @@
 	text-align: center;
   }
   
-  .li{
+  .li1{
+	font-size: 35px;
+	text-align: center;
+	color: #2383EB;
+  }
+
+  .li1:hover{
+	  font-size: 37px;
+	  color: #373150;
+  }
+
+  .li2{
 	font-size: 34px;
 	text-align: center;
 	color: #2383EB;
+  }
+
+  .li2:hover{
+	font-size: 36px;
+	color: #373150; 
+  }
+
+  .li3{
+	font-size: 32px;
+	text-align: center;
+	color: #2383EB;
+  }
+
+  .li3:hover{
+	font-size: 34px;
+	color: #373150;
   }
   
   .float{
@@ -205,6 +232,11 @@
 	  text-align: center;
 	  font-size: 40px;
   }
+
+.our:hover{
+	font-size: 50px;
+	color: #373150;
+}
  
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
   .animation_text h1{font-family: "Poppins", sans-serif;text-align: center;color: #373150;font-size: 90px;font-weight: 500}

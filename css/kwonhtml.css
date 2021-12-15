@@ -175,14 +175,19 @@
 	background-color: #2f3036;
 	color: white;
 	text-decoration: none;
+	margin-left: 10px;
 }
 
-#html{
+.html{
 	border-width: 2px;
 	border-bottom-style: solid;
 	font-size: 40px;
 	color: #337CFF;
 	text-align: center;
+}
+
+.html:hover{
+	font-size: 48px;
 }
 
 .video{
@@ -262,4 +267,10 @@ button {
 
 .btn-thx:hover{
 	color: #0D7BF2;
+}
+
+.bottom{
+	color: #000;
+	 font-size: 30px;
+	  text-decoration: none;
 }

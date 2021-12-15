@@ -257,3 +257,10 @@ button {
 }
 
 
+.btn-thx{
+	color: #000;
+}
+
+.btn-thx:hover{
+	color: #0D7BF2;
+}
