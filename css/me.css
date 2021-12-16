@@ -182,7 +182,6 @@
   font-family: 'Open Sans', Arial, sans-serif;
   position: relative;
   margin: 10px;
-  /* margin-top: 100px; */
   min-width: 230px;
   max-width: 315px;
   width: 100%;
@@ -267,9 +266,16 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-.animation_text h1{font-family: "Poppins", sans-serif;text-align: center;color: #373150;font-size: 60px;font-weight: 500; margin-bottom: 50px;}
-.animation_text h1 span{color:#56A274;}
-@media(max-width:768px){
-  .animation_text h1{font-size:30px}
+.my_testimony{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  border: #2f3036 solid 5px;
+  border-radius: 10px;
+}
+
+.my_testimony:hover{
+  font-size: 35px;
+  background-color: #555;
 }
