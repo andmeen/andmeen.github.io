@@ -225,3 +225,24 @@ button {
 	   text-decoration: none;
 	   font-size: 50px;
    }
+
+   ::-webkit-scrollbar {
+	width: 17px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px gray; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #0D7BF2; 
+	border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #0D7BF2; 
+  }
+ 
