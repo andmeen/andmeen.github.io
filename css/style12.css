@@ -264,3 +264,9 @@
   @media(max-width:768px){
 	.animation_text h1{font-size:30px}
   }
+
+
+.me{
+	text-decoration: none;
+	color: #000;
+}
