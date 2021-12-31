@@ -169,105 +169,71 @@
 	margin-top:16px;
 }
 
-.pdf{
-	font-size: 30px;
-	border: 5px lightskyblue solid;
-	background-color: maroon;
-	color: white;
-	text-decoration: none;
-}
-
-
-#js{
-	border-width: 2px;
-	border-bottom-style: solid;
-	font-size: 40px;
-	color: #337CFF;
-	text-align: center;
-}
-
 .hr{
 	border: 2px #0D7BF2 solid;
 }
 
+.level{
+	text-align: center;
+	 color:#0D7BF2;
+	  font-size: 40px;
+}
 
 button {
-	border: none;
-	display: block;
-	position: relative;
-	padding: 0.7em 2.4em;
-	font-size: 18px;
-	background: transparent;
-	cursor: pointer;
-	user-select: none;
-	overflow: hidden;
-	color: royalblue;
-	z-index: 1;
+	--color: #560bad;
 	font-family: inherit;
+	display: inline-block;
+	width: 8em;
+	height: 2.6em;
+	line-height: 2.5em;
+	margin: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid var(--color);
+	transition: color .5s;
+	z-index: 1;
+	font-size: 17px;
+	border-radius: 6px;
 	font-weight: 500;
+	color: var(--color);
    }
    
-   button span {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	z-index: -1;
-	border: 4px solid royalblue;
-   }
-   
-   button span::before {
+   button:before {
 	content: "";
-	display: block;
 	position: absolute;
-	width: 8%;
-	height: 500%;
-	background: var(--lightgray);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(-60deg);
-	transition: all 0.3s;
-   }
-   
-   button:hover span::before {
-	transform: translate(-50%, -50%) rotate(-90deg);
-	width: 100%;
-	background: royalblue;
+	z-index: -1;
+	background: var(--color);
+	height: 150px;
+	width: 200px;
+	border-radius: 50%;
    }
    
    button:hover {
-	color: white;
+	color: #fff;
    }
    
-   button:active span::before {
-	background: #2751cd;
+   button:before {
+	top: 100%;
+	left: 100%;
+	transition: all .7s;
+   }
+   
+   button:hover:before {
+	top: -30px;
+	left: -30px;
+   }
+   
+   button:active:before {
+	background: #3a0ca3;
+	transition: background 0s;
    }
 
-   .ch{
-	color: black;
-	text-decoration: none;
+.levels{
 	font-size: 20px;
+	text-decoration: none;
+	color: black;
 }
 
-::-webkit-scrollbar {
-	width: 17px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px gray; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-	background: #0D7BF2; 
-	border-radius: 15px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-	background: #0D7BF2; 
-  }
- 
+.levels:hover{
+	color: white;
+}
