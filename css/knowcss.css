@@ -172,7 +172,8 @@
 
 .pdf{
 	font-size: 30px;
-	border: 5px lightskyblue solid;
+	border: 5px #2f3036 solid;
+	border-radius: 15px;
 	background-color: maroon;
 	color: white;
 	text-decoration: none;
@@ -299,3 +300,13 @@ button {
 	background: #0D7BF2; 
   }
  
+.edit{
+   text-align: left;
+   text-decoration: none;
+   color: #337CFF;
+}
+
+.edit:hover{
+	border: #000 4px solid;
+	border-radius: 15px;
+}
