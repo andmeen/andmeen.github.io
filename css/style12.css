@@ -270,3 +270,15 @@
 	text-decoration: none;
 	color: #000;
 }
+
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color: #0D7BF2;
+	color: white;
+  }
+
+.email{
+	text-decoration: none;
+	color: #25d366;
+}
