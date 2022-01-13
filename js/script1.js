@@ -1,51 +1,62 @@
-var Text = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-  };
-  
-  Text.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-  
-    if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
+// Variables
+let prev = document.querySelector('.prev');
+let next = document.querySelector('.next');
+let imgs = document.querySelectorAll('.carousel-img');
+let dots = document.querySelectorAll('.dot');
+let captions = document.querySelectorAll('.carousel-caption')
+let totalImgs = imgs.length;
+let imgPosition = 0;
+
+// Event Listeners
+next.addEventListener('click', nextImg);
+prev.addEventListener('click', prevImg);
+
+// Update Position
+function updatePosition (){
+//   Images
+  for(let img of imgs){
+    img.classList.remove('visible');
+    img.classList.add('hidden');
+  }
+  imgs[imgPosition].classList.remove('hidden');
+  imgs[imgPosition].classList.add('visible')
+//   Dots
+  for (let dot of dots) {
+     dot.className = dot.className.replace(" active", "");
+  }
+    dots[imgPosition].classList.add('active');
+//   Captions
+  for (let caption of captions) {
+      caption.classList.remove('visible');
+      caption.classList.add('hidden');
+  }
+    captions[imgPosition].classList.remove('hidden');
+    captions[imgPosition].classList.add('visible')
+}
+
+// Next Img
+function nextImg(){
+  if (imgPosition === totalImgs -1){
+        imgPosition = 0;
+    } else{
+        imgPosition++;
     }
-  
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-  
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-  
-    if (this.isDeleting) { delta /= 2; }
-  
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      this.loopNum++;
-      delta = 500;
+    updatePosition();
+}
+//Previous Image
+function prevImg(){
+  if (imgPosition === 0){
+        imgPosition = totalImgs-1;
+    } else{
+        imgPosition--;
     }
-  
-    setTimeout(function() {
-      that.tick();
-    }, delta);
-  };
-  
-  window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-words');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new Text(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-  };
+    updatePosition();
+}
+
+// Dot Position
+dots.forEach((dot, dotPosition) => {
+  dot.addEventListener("click", () => {
+    imgPosition = dotPosition
+    updatePosition(dotPosition)
+  })
+})
