@@ -153,6 +153,7 @@
 		  display:block;
 	  }
   }
+
   
   .welcome{
 	font-size: 40px;
@@ -277,7 +278,6 @@ h2::after {
 
 .carousel .thumb-wrapper {
 	padding: 25px 15px;
-	background: #fff;
 	border-radius: 6px;
 	text-align: center;
 	position: relative;
@@ -393,3 +393,10 @@ h2::after {
 	font-size: 24px;
 }
 
+.dark{
+	background-color: #0D7BF2;
+	font-size: 20px;
+	border: #0D7BF2 1px solid;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
