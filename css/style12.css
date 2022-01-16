@@ -1,12 +1,12 @@
 
-
 *{
-	margin:0;
-	padding:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
   }
   body {
 	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size:16px;
   }
   .mobile-menu {
 	display:block;
@@ -155,55 +155,6 @@
   }
 
   
-  .welcome{
-	font-size: 40px;
-	text-align: center;
-  }
-  
-  .welcome-host{
-	font-size: 50px;
-	text-align: center;
-	color: #2383EB;
-  }
-  
-  .host{
-	font-size: 50px;
-	text-align: center;
-  }
-  
-  .li1{
-	font-size: 35px;
-	text-align: center;
-	color: #2383EB;
-  }
-
-  .li1:hover{
-	  font-size: 37px;
-	  color: #373150;
-  }
-
-  .li2{
-	font-size: 34px;
-	text-align: center;
-	color: #2383EB;
-  }
-
-  .li2:hover{
-	font-size: 36px;
-	color: #373150; 
-  }
-
-  .li3{
-	font-size: 32px;
-	text-align: center;
-	color: #2383EB;
-  }
-
-  .li3:hover{
-	font-size: 34px;
-	color: #373150;
-  }
-  
   .float{
 	  position:fixed;
 	  width:60px;
@@ -219,26 +170,15 @@
 	z-index:100;
   }
   
-  .my-float{
-	  margin-top:16px;
-  }
-  
-  .hr{
-	  border: 2px #0D7BF2 solid;
-	  margin-bottom: 30px;
-  }
-  
-  .our{
-	  color: #0D7BF2;
-	  text-align: center;
-	  font-size: 40px;
-  }
-
-.our:hover{
-	font-size: 50px;
-	color: #373150;
+.my-float{
+	margin-top:16px;
 }
- 
+  
+.hr{
+	border: 2px #0D7BF2 solid;
+	margin-bottom: 30px;
+}
+  
 
 .have{
 	text-align: center;
@@ -371,7 +311,6 @@ h2::after {
     background: #ffffff;
     float: center;
     text-align: center;
-	display: block;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 }
 
@@ -393,10 +332,114 @@ h2::after {
 	font-size: 24px;
 }
 
-.dark{
-	background-color: #0D7BF2;
-	font-size: 20px;
-	border: #0D7BF2 1px solid;
-	color: white;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    padding-right: 10px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    margin-right: 5px;
+}
+
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 30px;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+	font-size: 24px;
+}
+
+.contact .info p {
+    font-size: 22px;
 }
