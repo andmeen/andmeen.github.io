@@ -291,6 +291,11 @@ h2::after {
     text-align: center;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.7s ease;
+}
+
+#container:hover{
+	transform: scale(1.1);
 }
 
 .count {
@@ -305,10 +310,12 @@ h2::after {
 	font-size: 20px;
 	color: black;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	transition: 0.7s ease;
 }
 
 .follow:hover{
 	font-size: 24px;
+	transform: scale(1.1);
 }
 
 .content {
@@ -333,11 +340,6 @@ h2::after {
     transform: scale(1.1);
 }
 
-.card .icon {
-    color: #3a6cf4;
-    font-size: 8em;
-    text-align: center;
-}
 
 .info {
     text-align: center;
@@ -352,13 +354,6 @@ h2::after {
     margin: 10px;
 }
 
-.projects {
-    background-color: #000016;
-}
-
-.projects .content{
-    margin-top: 30px;
-}
 
 .project-card {
     background-color: #fff;
@@ -375,45 +370,6 @@ h2::after {
    transform: scale(1.1);
 }
 
-.project-card:hover .project-image {
-    opacity: 0.9;
- }
-
-.project-image img{
-    width: 100%
-}
-
-.project-info {
-    padding: 1em;
-}
-
-.project-category {
-    font-size: 30px;
-    color: #000;
-}
-
-.project-title {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-
-.more-details {
-    text-decoration: none;
-    color: #3a6cf4;
-}
-
-.more-details:hover {
-    color: #601cfc;
-}
-
-
-.contact .icon{
-    font-size: 4.5em;
-}
-
 .contact .info h3 {
     color: #000;
 	font-size: 24px;
@@ -422,3 +378,4 @@ h2::after {
 .contact .info p {
     font-size: 22px;
 }
+
