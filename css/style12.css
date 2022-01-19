@@ -287,10 +287,9 @@ h2::after {
     color: #333333;
     font-size: 14px;
     background: #ffffff;
-    float: center;
+    float: left;
     text-align: center;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	transition: 0.7s ease;
 }
 
@@ -303,6 +302,27 @@ h2::after {
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+}
+
+#container1{
+	width: 180px;
+    border: 1px solid black;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    font-family: "hanimation";
+    line-height: 50px;
+    color: #333333;
+    font-size: 14px;
+    background: #ffffff;
+    float: center;
+    text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	transition: 0.7s ease;
+	margin-top: 40px;
+}
+
+#container1:hover{
+	transform: scale(1.1);
 }
 
 .follow{
@@ -378,4 +398,3 @@ h2::after {
 .contact .info p {
     font-size: 22px;
 }
-

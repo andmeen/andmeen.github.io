@@ -274,6 +274,7 @@ button {
    border: #2f3036 solid 5px;
    border-radius: 10px;
    background-color: #337CFF;
+   margin-right: 1150px;
 }
 
 ::-webkit-scrollbar {
