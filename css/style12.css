@@ -174,7 +174,8 @@ h2, b{
 	text-transform: uppercase;
 	position: relative;
 	margin: 30px 0 60px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: blue 1.1px 1px;
 }
 h2::after {
 	content: "";
