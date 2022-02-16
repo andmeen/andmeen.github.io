@@ -166,94 +166,42 @@ body {
 }
 
 
-h2, b{
-	color: #000;
-	font-size: 26px;
-	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
-	position: relative;
-	margin: 30px 0 60px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	text-shadow: blue 1.1px 1px;
-}
-h2::after {
-	content: "";
-	width: 100px;
+.bannartext {
 	position: absolute;
-	margin: 0 auto;
-	height: 4px;
-	border-radius: 1px;
-	background: red;
-	left: 0;
-	right: 0;
-	bottom: -20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-}
-.carousel {
-	margin: 50px auto;
-	padding: 0 0px;
+	text-align: center;
+	width: max-content;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-right: 8px;
+	margin-bottom: 360px;
+	margin-top: 140px;
+    margin-left: 830px;
+
 }
 
-.carousel .thumb-wrapper {
-	padding: 25px 15px;
-	border-radius: 6px;
+.btn{
+	font-size: 25px;
+	 color: white;
+	 background-color: #0D7BF2;
+	 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	 border-radius: 15px;
+	 border: black 3px solid;
+}
+
+.welcome{
 	text-align: center;
-	position: relative;
+	margin-bottom: 40px;
 }
-.carousel .item .img-box {
-	height: 120px;
-	margin-bottom: 20px;
-	width: 100%;
-	position: relative;
+
+.welcome_img{
+	margin-right: 330px;
 }
-.carousel .item img {	
-	max-width: 100%;
-	max-height: 100%;
-	display: inline-block;
-	position: absolute;
-	bottom: 0;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-}
-.carousel .item h4 {
-	font-size: 18px;
-}
-.carousel .item h4, .carousel .item p, .carousel .item ul {
-	margin-bottom: 14px;
-}
-.carousel .thumb-content .btn {
-	color: black;
-	font-size: 17px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 6px;
-	background: none;
-	border: 1px solid #0D7BF2;
-	padding: 6px 14px;
-	margin-top: 10px;
-	line-height: 16px;
-	border-radius: 20px;
-}
-.carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
-	color: #fff;
-	background: black;
-	box-shadow: none;
-}
-.carousel .thumb-content .btn i {
-	font-size: 14px;
-	font-weight: bold;
-	margin-left: 5px;
-}
-.carousel .item-price {
-	font-size: 13px;
-	padding: 2px 0;
-}
-.carousel .item-price strike {
-	opacity: 0.7;
-	margin-right: 5px;
-}
+
+@media screen and (max-width : 800px){
+	.bannartext{
+		margin-top: 440px;
+		margin-left: 60px;
+	}
+  }
 
 .account{
 	color: #000;
@@ -262,7 +210,8 @@ h2::after {
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	margin: 30px 0 60px;
+	margin: 30px 5 60px;
+	margin-top: 160px;
 }
 
 .account::after {
@@ -344,214 +293,4 @@ h2::after {
 
 .more:hover{
 	border: #000 2px solid;
-}
-
-.footer-distributed{
-	background: #363839;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color:  lightseagreen;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.footer-distributed .footer-company-name{
-	color:  #fff;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
-
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 20px;
-	line-height: 38px;
-	border: white 3px solid;
-}
-
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-  font-weight:400;
-	vertical-align: middle;
-	margin:0;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 20px;
-}
-
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-	font-size: 20px;
-}
-
-.footer-distributed .footer-center p a{
-	color:  lightseagreen;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #fff;
-	font-size: 20px;
-	font-weight: normal;
-	margin: 0;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	border: white 3px solid;
-	border-radius: 10px;
-
-	transition: 0.7s ease;
-}
-
-.footer-distributed .footer-company-about:hover{
-	transform: scale(1.1);
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-	margin-right: 3px;
-	margin-bottom: 5px;
-	margin-left: 15px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-}
-
-.fast{
-	color: #0D7BF2;
-	font-size: 20px;
-	margin-top: 30px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.user{
-	border: white 3px solid;
-	border-radius: 30px;
 }
