@@ -172,9 +172,10 @@ body {
 	width: max-content;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin-right: 8px;
-	margin-bottom: 360px;
-	margin-top: 140px;
-    margin-left: 830px;
+	left: 34%;
+	margin-left: 40px;
+	top: 30%;
+	bottom: 0%;
 
 }
 
@@ -192,16 +193,42 @@ body {
 	margin-bottom: 40px;
 }
 
-.welcome_img{
-	margin-right: 330px;
-}
-
-@media screen and (max-width : 800px){
+@media screen and (max-width : 412px){
 	.bannartext{
-		margin-top: 440px;
-		margin-left: 60px;
+		left: 30%;
+		top: 300px;
+	}
+	.welcome{
+		text-align: center;
+		margin-bottom: 40px;
+		right: 30%;
+		left: 43%;
+	}
+	.mean1{
+		font-size: 30px;
+	}
+	.mean{
+		margin-top: 60px;
+		color: #0D7BF2;
 	}
   }
+
+  
+
+.mean{
+	margin-top: 390px;
+	margin-bottom: 10px;
+	color: #0D7BF2;
+	text-align: center;
+}
+
+.mean1{
+	font-size: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
 
 .account{
 	color: #000;
