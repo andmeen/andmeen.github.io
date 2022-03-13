@@ -6,148 +6,151 @@
 	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size:16px;
   }
-  .mobile-menu {
-	display:block;
-	width:100%;
-  background: #0D7BF2;
-  line-height: 1.6em;
-  font-weight: 400;
-  width:100%;
-  font-size: 20px;
-  text-align:center;
+  nav{
+	  height: 6rem;
+	  width: 100vw;
+	  background-color: #0D7BF2;
+	  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+	  display: flex;
+	  position: fixed;
+  }
+  
+  /*Styling logo*/
+  .logo{
+	  padding:1vh 1vw;
+	  text-align: center;
+  }
+  .logo img {
+	  height: 5rem;
+	  width: 5rem;
+	  border-radius: 10px;
+	  border: #000 3px solid;
+  }
+  
+  .logo img:hover{
+	  opacity: 0.8;
+  }
+  
+  /*Styling Links*/
+  .nav-links{
+	  display: flex;
+	  list-style: none; 
+	  width: 88vw;
+	  padding: 0 0.7vw;
+	  justify-content: space-evenly;
+	  align-items: center;
+	  font-size: 25px;
+  }
+  .nav-links li a{
+	  text-decoration: none;
+	  margin: 0 0.7vw;
+	  color: white;
+  }
+  .nav-links li a:hover {
+	  color: #13EDEF;
+  }
+  .nav-links li {
 	  position: relative;
-	margin:0 auto;
   }
-  /*Strip the ul of padding and list styling*/
-  .mobile-menu ul {
-	  list-style-type:none;
-	margin: 0 auto;
-	padding-left:0;
-	text-align:center;
-	width:100%;
-	position: absolute;
-	background: #0D7BF2;
-  }
-  
-  /*Create a horizontal list with spacing*/
-  .mobile-menu li {
-	  display:inline-block;
-	  /*float: left;
-	  margin-right: 1px;*/
-  }
-  
-  /*Style for menu links*/
-  .mobile-menu li a {
-	  display:block;
-	  min-width:140px;
-	  text-align: center;
-	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	  color: #fff;
-	text-transform:uppercase;
-	  background: #0D7BF2;
-	  text-decoration: none;
-	margin-left:-5px;
-	padding: 10px 0;  
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  }
-  
-  /*Hover state for top level links*/
-  .mobile-menu li:hover a {
-	  color: black;
-	background-color:#ccddee;
-  }
-  
-  /*Style for dropdown links*/
-  .mobile-menu li:hover ul a {
-	  background: #f3f3f3;
-	  color: #2f3036;
-	  height: 40px;
-	  line-height: 40px;
-  }
-  
-  /*Hover state for dropdown links*/
-  .mobile-menu li:hover .mobile-menu ul a:hover {
-	  color: #0D7BF2;
-  }
-  
-  /*Hide dropdown links until they are needed*/
-  .mobile-menu li ul {
-	  display: none;
-  }
-  
-  /*Make dropdown links vertical*/
-  .mobile-menu li ul li {
+  .nav-links li a::before {
+	  content: "";
 	  display: block;
-	  float: none;
+	  height: 3px;
+	  width: 0%;
+	  background-color: #fff;
+	  position: absolute;
+	  transition: all ease-in-out 250ms;
+	  margin: 0 0 0 10%;
+  }
+  .nav-links li a:hover::before{
+	  width: 80%;
   }
   
-  /*Prevent text wrapping*/
-  .mobile-menu li ul li a {
-	  width: auto;
-	  min-width: 100px;
-	  padding: 0 20px;
+  
+  /*Styling Hamburger Icon*/
+  .hamburger div{
+	  width: 30px;
+	  height:3px;
+	  background: #f2f5f7;
+	  margin: 5px;
+	  transition: all 0.3s ease;
   }
-  
-  
-  /*Style 'show menu' label button and hide it by default*/
-  .mobile-menu .show-menu {
-	  text-decoration: none;
-	  color: #fff;
-	  background: #0D7BF2;
-	  text-align: center;
-	  padding: 10px 15px;
-	  display: none;
-	cursor: pointer;
-	text-transform: uppercase;
-  }
-  
-  .mobile-menu .show-menu span{
-	 padding-left: 25px;
-  }
-  
-  /*Hide checkbox*/
-  .mobile-menu input[type=checkbox]{
+  .hamburger{
 	  display: none;
   }
   
-  /*Show menu when invisible checkbox is checked*/
-  .mobile-menu input[type=checkbox]:checked ~ #menu{
-	  display: block;
-  }
-  
-  /*Responsive Styles*/
-  
-  @media screen and (max-width : 800px){
-	.mobile-menu .lines {
-	  border-bottom: 15px double #f8f8f8; 
-	  border-top: 5px solid #f8f8f8; 
-	  content:"";
-	  height: 5px; 
-	  width:20px;
-	  padding-right:15px;
-	float: right;
-  }
-	  /*Make dropdown links appear inline*/
-	  .mobile-menu ul {
-		  position: static;
-		  display: none;
+  /*Stying for small screens*/
+  @media screen and (max-width: 800px){
+	  nav{
+		  position: fixed;
+		  z-index: 3;
 	  }
-	  /*Create vertical spacing*/
-	  .mobile-menu li {
-		  margin-bottom: 1px;
-	  }
-	  /*Make all menu links full width*/
-	  .mobile-menu ul li, .mobile-menu li a {
-		  width: 100%;
-	  }
-	  /*Display 'show menu' link*/
-	  .mobile-menu .show-menu {
+	  .hamburger{
 		  display:block;
+		  position: absolute;
+		  cursor: pointer;
+		  right: 5%;
+		  top: 50%;
+		  transform: translate(-5%, -50%);
+		  z-index: 2;
+		  transition: all 0.7s ease;
 	  }
+	  .nav-links{
+		  position: fixed;
+		  background: #131418;
+		  height: 100vh;
+		  width: 100%;
+		  flex-direction: column;
+		  clip-path: circle(50px at 90% -20%);
+		  -webkit-clip-path: circle(50px at 90% -10%);
+		  transition: all 1s ease-out;
+		  pointer-events: none;
+	  }
+	  .nav-links.open{
+		  clip-path: circle(1000px at 90% -10%);
+		  -webkit-clip-path: circle(1000px at 90% -10%);
+		  z-index: 0;
+	  }
+	  .nav-links li{
+		  opacity: 0;
+	  }
+	  .nav-links li:nth-child(1){
+		  transition: all 0.5s ease 0.2s;
+	  }
+	  .nav-links li:nth-child(2){
+		  transition: all 0.5s ease 0.4s;
+	  }
+	  .nav-links li:nth-child(3){
+		  transition: all 0.5s ease 0.6s;
+	  }
+	  .nav-links li:nth-child(4){
+		  transition: all 0.5s ease 0.7s;
+	  }
+	  .nav-links li:nth-child(5){
+		  transition: all 0.5s ease 0.8s;
+	  }
+	  .nav-links li:nth-child(6){
+		  transition: all 0.5s ease 0.9s;
+		  margin: 0;
+	  }
+	  .nav-links li:nth-child(7){
+		  transition: all 0.5s ease 1s;
+		  margin: 0;
+	  }
+	  li.fade{
+		  opacity: 1;
+	  }
+  }
+  /*Animating Hamburger Icon on Click*/
+  .toggle .line1{
+	  transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .line2{
+	  transition: all 0.7s ease;
+	  width:0;
+  }
+  .toggle .line3{
+	  transform: rotate(45deg) translate(-5px,-6px);
   }
 
 .html{
