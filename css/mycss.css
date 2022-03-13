@@ -13,7 +13,6 @@ nav{
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: fixed;
-    z-index: 10;
 }
 
 /*Styling logo*/
@@ -110,8 +109,7 @@ nav{
     .nav-links.open{
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-        z-index: 0px;
+        z-index: 0;
     }
     .nav-links li{
         opacity: 0;
@@ -242,6 +240,7 @@ color: #37404d;
 .pricing .content {
 padding: 20px 20px 30px;
 background: #f9f9f9;
+z-index: 5;
 }
 
 .pricing .content ul {
