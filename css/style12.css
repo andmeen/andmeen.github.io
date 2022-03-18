@@ -271,7 +271,7 @@ nav{
 #container1{
 	width: 180px;
     border: 1px solid black;
-	border-width: 1.2px;
+	border-width: 1px;
     padding: 2px 2px 2px 2px;
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -277,7 +277,7 @@ button {
 	font-size: 20px;
   }
   
-  .sidenav p {
+  .sidenav h1 {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 22px;
@@ -286,7 +286,7 @@ button {
 	transition: 0.2s;
   }
   
-  .sidenav a:hover {
+  .sidenav h1:hover {
 	color: #000;
   }
   
@@ -315,4 +315,21 @@ button {
 	margin-bottom: 50px;
 	padding-top: 1px;
 	padding-bottom: 2px;
+}
+
+.sub{
+	color: white;
+	font-size: 20.2px;
+    border: #000 2px solid;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	transition: 0.7s ease;
+}
+
+.sub:hover{
+	transform: scale(1.1);
 }
