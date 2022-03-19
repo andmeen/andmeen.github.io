@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Shizuru&family=Tajawal:wght@300;400&display=swap');
 
 *{
     margin: 0;
@@ -167,17 +168,25 @@ nav{
 }
 
 .btn{
-	background-color: #0D7BF2;
-	outline: none;
-	margin-top: 20px;
-	font-size: 30px;
-	border: #000 3px solid;
-	border-radius: 15px;
+    width: 10rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    background-color: #6e0aef;
+}
+
+.btn:hover{
+    background-color: #7d25f0;
+    cursor: pointer;
 }
 
 .btn_text{
 	text-decoration: none;
 	color: white;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 10px;
