@@ -6,7 +6,7 @@
 }
 
 body {
-	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	  font-family: "Tajawal", sans-serif;
 }
 
 nav{
@@ -93,7 +93,7 @@ nav{
         display:block;
         position: absolute;
         cursor: pointer;
-        right: 5%;
+        right: 80%;
         top: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
@@ -158,39 +158,72 @@ nav{
 }
 
 
-.bannartext {
-  text-align: center;	
-  margin-top: 80px;
-}
-
-.bannartext:hover{
-	color: #0D7BF2;
-}
-
-.btn{
+/* Heor styling */
+.hero {
+    background-color: #f8f7fc;
+  }
+  
+  .hero-section {
+    max-width: 1366px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+  
+  .hero-section .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-section .content h4 {
+    color: #0D7BF2;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section .content h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section .content p {
+    font-size: 1.4rem;
+  }
+  
+  .hero-section .content p span.purple {
+    color: #0D7BF2;
+  }
+  
+  .hero-section form {
+    display: flex;
+  }
+  .btn {
     width: 10rem;
     margin-top: 3rem;
     border-radius: 0.5rem;
     outline: none;
     border: none;
     padding: 0.75rem 1.5rem;
-    background-color: #6e0aef;
-}
-
-.btn:hover{
-    background-color: #7d25f0;
+    background-color: #0D7BF2;
+    transition: 0.7s ease;
+    font-family: "Tajawal", sans-serif;
+  }
+  
+  .btn:hover {
+    background-color: #333333;
     cursor: pointer;
-}
-
-.btn_text{
-	text-decoration: none;
-	color: white;
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-top: 10px;
-}
+    transform: scale(1.1);
+  }
+  
+  .btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+  }
+  
 
 .welcome{
 	text-align: center;
@@ -338,3 +371,116 @@ nav{
 .more:hover{
 	border: #000 2px solid;
 }
+
+section.features {
+    padding: 2rem 0;
+    background-color: #f8f7fc;
+  }
+  
+  section.features .features-section {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .features-section h4 {
+    color: #0D7BF2;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .features-section .qualities {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .features-section .qualities .quality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 17rem;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+  }
+  
+  .features-section .qualities .quality:hover {
+    border: 2px solid #0D7BF2;
+
+  }
+  
+  .qualities .quality i {
+    font-size: 2rem;
+    color: #6e0aef;
+    margin-bottom: 1rem;
+  }
+  
+  .qualities .quality h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .qualities .quality p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333333;
+  }
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+    h4 {
+      font-size: 85%;
+    }
+  }
+  
+  @media (max-width: 1175px) {
+    h4 {
+      font-size: 110%;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    * {
+      text-align: center;
+    }
+    .hero img {
+      display: none;
+    }
+    .hero-section {
+      align-items: center;
+      padding: 2rem 0rem;
+      width: 50%;
+    }
+    .hero .btn {
+      align-self: center;
+    }
+    .hero .content {
+      margin-top: 2rem;
+    }
+    .features-section .qualities {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    section.features .features-section {
+      align-items: center;
+    }
+    .phones-section h4 {
+      align-self: center;
+    }
+  }
+  
+  @media (max-width: 660px) {
+    .hero-section .content h1 {
+      font-size: 2rem;
+    }
+    .phones-section {
+      align-items: center;
+    }
+    .phones-section .phones {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
