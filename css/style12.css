@@ -484,3 +484,14 @@ section.features {
       grid-template-columns: 1fr 1fr;
     }
   }
+
+.why{
+    border: #0D7BF2 2px solid;
+    border-radius: 15px;
+    width: 300px;
+    transition: 0.7s ease;
+}
+
+.why:hover{
+    transform: scale(1.1);
+}
