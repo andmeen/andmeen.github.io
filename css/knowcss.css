@@ -195,6 +195,11 @@
 	border: 6px #0D7BF2 solid;
 	border-radius: 10px;
 	margin-left: 10px;
+	transition: 0.7s ease;
+}
+
+.video:hover{
+	transform: scale(1.1);
 }
 
 .hr{
