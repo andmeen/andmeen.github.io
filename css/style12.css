@@ -8,6 +8,9 @@
 
 body {
 	  font-family: "Tajawal", sans-serif;
+    color: #000;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
 }
 
 nav{
@@ -496,4 +499,80 @@ section.features {
 
 .why:hover{
     transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+p > a:hover{
+  color: #d9d9d9;
+  text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin:  1% 0 1% 0;
+}
+._12 {
+  font-size: 1.2em;
+}
+._14 {
+  font-size: 1.4em;
+}
+ul {
+  padding:0;
+  list-style: none;
+}
+.footer-social-icons {
+  width: 350px;
+  display:block;
+  margin: 0 auto;
+}
+.social-icon {
+  color: #fff;
+}
+ul.social-icons {
+  margin-top: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  border: #000 2px solid;
+  border-radius: 15px;
+}
+
+th{
+   height: 35px;
+   text-align: center;
+   vertical-align: top;
+   background-color: #0D7BF2;
+   font-size: 17px;
+}
+
+th, td{
+   padding: 10px;
+   text-align: center;
+   border-bottom: 1px solid #ddd; 
+}
+
+tr:nth-child(even){
+   background-color: #f5f1f1;
+}
+
+tr:nth-child(odd){
+   background-color: #d6d3d3;
 }
