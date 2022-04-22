@@ -44,6 +44,7 @@
 	line-height: 40px;
 	font-size: 24px;
 	text-decoration: none;
+	text-align: center;
   }
   .nav > .nav-links > ul{
 	padding: 0;
@@ -106,6 +107,7 @@
 	  overflow-y: hidden;
 	  top: 50px;
 	  left: 0px;
+	  z-index: 1;
 	}
 	.nav > .nav-links > ul li a {
 	  display: block;

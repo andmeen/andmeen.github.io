@@ -6,6 +6,7 @@
 body {
 	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .nav {
   height: 50px;
   width: 100%;
@@ -44,6 +45,7 @@ body {
   line-height: 40px;
   font-size: 24px;
   text-decoration: none;
+  text-align: center;
 }
 .nav > .nav-links > ul{
   padding: 0;
@@ -106,6 +108,7 @@ margin-right: 10px;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    z-index: 1;
   }
   .nav > .nav-links > ul li a {
     display: block;
@@ -133,9 +136,6 @@ margin-right: 10px;
     overflow-y: auto;
   }
 }
-
-
-
   
 .hr{
 	border: 2px #0D7BF2 solid;

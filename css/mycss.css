@@ -45,6 +45,7 @@ body {
   line-height: 40px;
   font-size: 24px;
   text-decoration: none;
+  text-align: center;
 }
 .nav > .nav-links > ul{
   padding: 0;
@@ -107,6 +108,7 @@ margin-right: 10px;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    z-index: 1;
   }
   .nav > .nav-links > ul li a {
     display: block;
@@ -322,4 +324,12 @@ margin-right: 10px;
 .title1:hover{
 	color: #0D7BF2;
 	font-size: 40px;
+}
+
+.learn{
+  text-align: center;
+  border: #0D7BF2 2px solid;
+  border-radius: 15px;
+  width: 200px;
+
 }

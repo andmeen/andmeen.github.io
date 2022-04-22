@@ -6,135 +6,136 @@
 	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size:16px;
   }
-.nav {
-  height: 50px;
-  width: 100%;
-  background-color: #1177ca;
-  position: relative;
-}
 
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 30px;
-  margin-left: 10px;
-  color: #fff;
-  font-weight: 10px;
-  margin-bottom: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  float: left;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-.nav > .nav-links > ul li a{
-  display: block;
-  padding: 0 8px;
-  color: #fff;
-  line-height: 40px;
-  font-size: 24px;
-  text-decoration: none;
-}
-.nav > .nav-links > ul{
-  padding: 0;
-  margin-top: 5px;
-  list-style: none;
-  position: relative;
-}
-.nav > .nav-links > ul li{
-  display: inline-block;
-  background-color: #1177ca;
-}
-.nav > .nav-links > ul li:hover{
-    background-color: #0b65af;
-    border-radius: 5px;
-}
-
-.nav > #nav-check {
-  display: none;
-}
-
-.nav .nav-links ul a.icon{
-margin-left: 80px;
-margin-right: 10px;
-}
-
-.nav .nav-links ul a i{
-  background-color: #fff;
-  border-radius: 50px;
-  padding: 7px;
-  margin-left: 5px;
-}
-
-
-@media (max-width:750px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
+  .nav {
     height: 50px;
-    padding: 13px;
+    width: 100%;
+    background-color: #1177ca;
+    position: relative;
   }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
+  
+  .nav > .nav-header {
+    display: inline;
   }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 10px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
   .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
+    display: inline;
+    float: right;
+    font-size: 18px;
   }
-  .nav > .nav-links > ul li a {
+  .nav > .nav-links > ul li a{
     display: block;
-    width: 100%;
+    padding: 0 8px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
   }
-
-    .nav > .nav-links > ul li{
+  .nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+  }
+  .nav > .nav-links > ul li{
+    display: inline-block;
+    background-color: #1177ca;
+  }
+  .nav > .nav-links > ul li:hover{
+      background-color: #0b65af;
+      border-radius: 5px;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  .nav .nav-links ul a.icon{
+  margin-left: 80px;
+  margin-right: 10px;
+  }
+  
+  .nav .nav-links ul a i{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 5px;
+  }
+  
+  
+  @media (max-width:750px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label > span {
       display: block;
-      margin-bottom: 20px;
-      padding: 0;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
       background-color: #333;
-
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      z-index: 1;
     }
-    .nav > .nav-links > ul li a{
-        margin-left: 40%;
+    .nav > .nav-links > ul li a {
+      display: block;
+      width: 100%;
     }
-    .nav .nav-links ul a.icon{
-      margin-left: 33%;
+  
+      .nav > .nav-links > ul li{
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: #333;
+  
+      }
+      .nav > .nav-links > ul li a{
+          margin-left: 40%;
+      }
+      .nav .nav-links ul a.icon{
+        margin-left: 33%;
+      }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
     }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
   }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-}
-
-
 
   .float{
 	position:fixed;
