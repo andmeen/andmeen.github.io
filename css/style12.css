@@ -532,12 +532,12 @@ ul.social-icons {
 table{
   border-collapse: collapse;
   width: 100%;
-  border: #000 2px solid;
+  border: #fff 2px solid;
   border-radius: 15px;
 }
 
 th{
-   height: 35px;
+   height: 30px;
    text-align: center;
    vertical-align: top;
    background-color: #0D7BF2;
