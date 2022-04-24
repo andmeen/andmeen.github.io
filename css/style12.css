@@ -530,7 +530,7 @@ ul.social-icons {
 }
 
 table{
-  border-collapse: collapse;
+  border-collapse: unset;
   width: 100%;
   border: #fff 2px solid;
   border-radius: 15px;
