@@ -234,7 +234,7 @@ margin-right: 10px;
 }
 
 
-@media only screen and (max-width: 414px) { 
+@media only screen and (max-width: 1500px) { 
 	.welcome{
 		text-align: center;
 		margin-bottom: 40px;
@@ -248,6 +248,16 @@ margin-right: 10px;
 		margin-top: 60px;
 		color: #0D7BF2;
 	}
+
+  .hero-section {
+    max-width: 1366px;
+    height: 90vh;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
  }
 
 .mean{
