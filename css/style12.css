@@ -151,7 +151,7 @@ margin-right: 10px;
   
   .hero-section {
     max-width: 1366px;
-    height: 90vh;
+    height: 60vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -251,12 +251,13 @@ margin-right: 10px;
 
   .hero-section {
     max-width: 1366px;
-    height: 90vh;
+    height: 66vh;
     display: block;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 0 5rem;
+    margin-top: 30px;
   }
  }
 
