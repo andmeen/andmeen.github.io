@@ -6,12 +6,14 @@
 }
 body {
   font-size:16px;
+  background-color: #3f3d47;
 }
+
 
 .nav {
   height: 50px;
   width: 100%;
-  background-color: #1177ca;
+  background-color: #3361C5;
   position: relative;
 }
 
@@ -56,10 +58,10 @@ body {
 }
 .nav > .nav-links > ul li{
   display: inline-block;
-  background-color: #1177ca;
+  background-color: #3361C5;
 }
 .nav > .nav-links > ul li:hover{
-    background-color: #0b65af;
+    background-color: #3361C5;
     border-radius: 5px;
 }
 
@@ -150,7 +152,7 @@ margin-right: 10px;
 }
 
 .plan-inner {
-  background: #fff;
+  background: #3f3d47;
   margin: 0 auto;
   min-width: 280px;
   max-width: 100%;
@@ -209,7 +211,7 @@ margin-right: 10px;
 }
 
 .entry-content {
-  color: #323232;
+  color: #fff;
 }
 
 .entry-content ul {
@@ -341,4 +343,5 @@ margin-right: 10px;
   font-size: 28px;
   width: 200px;
   height: 40px;
+  color: #fff;
 }
