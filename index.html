@@ -32,6 +32,7 @@
           <li><a href="https://ameen121.netlify.app/" target="_blank">تابعني</a></li>
           <li><a href="https://hoststore.tabasher.io/" target="_blank">متجري</a></li>
           <li><a href="more.html">المزيد</a></li>
+          <li><button id="dark" onclick="myFunction()">الوضع الداكن</button></li>
         </ul>
     </div>
   </div> 
@@ -42,27 +43,27 @@
 <h1>مرحبا بك في <span>هوست</span></h1>
 <p>نقدم لك هوست لتعليم البرمجة, احسن جودة لتعلم البرمجة <span>جودة وسرعة وأمان</span> أثناء تصفحك</p>
 <button class="btn"><a href="myhtml.html">ابدا التعلم</a></button>
-</div>
+</div><p class="hr"/>
 <section class="features" id="features">
   <div class="features-section">
     <h4 class="why">  لماذا هوست احسن خيار ؟  </h4>
     <div class="qualities">
-      <div class="quality">
+      <div id="quality">
         <i class="fas fa-shipping-fast"></i>
         <h3>تعليم البرمجة</h3>
         <p>نقدم لك احسن جودة لتعليم البرمجة</p>
       </div>
-      <div class="quality">
+      <div id="quality">
         <i class="fas fa-user-shield"></i>
         <h3>حماية وأمان</h3>
         <p>لايوجد فايروسات و برامج خبيثة على الموقع</p>
       </div>
-      <div class="quality">
+      <div id="quality">
         <i class="fas fa-sort-amount-up-alt"></i>
         <h3>نصائح مفيدة</h3>
         <p>نصائح مفيدة لك اثناء مشاهدة الفيديو</p>
       </div>
-      <div class="quality">
+      <div id="quality">
         <i class="fas fa-sort-amount-up-alt"></i>
         <h3>التحفيز</h3>
         <p>نحفزك على الاستمرار على تعليم البرمجة اثناء مشاهدة الفيديو</p>
@@ -70,11 +71,13 @@
     </div>
   </div>
 </section>
-
+<div id="down_part">
 <h1 class="mean">أهلا بكم في موقع هوست لتعليم البرمجة</h1><br><br>
 <p class="mean1">موقع تم تطويره من قبل شخص عربي</p><br>
 <p class="mean1">تم تطوير موقعنا لتعليم البرمجة بطريقة سهلة وبسيطة</p><br>
-<p class="mean1">وعدم تعقيد فكرة تعلم البرمجة !</p><br><br>
+<p class="mean1">وعدم تعقيد فكرة تعلم البرمجة !</p>
+</div>
+<br><br><br><br>
 <!-- <center><h1>ساعات العمل في الرمضان</h1>
 <div style="overflow-x: auto;">
   <table>
@@ -107,5 +110,11 @@
 </div>
 </center>
 <script src="js/script1.js"></script>
+<script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
 </body>
 </html>

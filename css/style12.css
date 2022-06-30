@@ -8,10 +8,14 @@
 
 body {
 	  font-family: "Tajawal", sans-serif;
-    color: #fff;
     background: #fff;
     -webkit-font-smoothing: antialiased;
-    background-color: #3f3d47;
+    background-color: #fff;
+}
+
+.dark-mode {
+  background-color: #3f3d47;
+  color: white;
 }
 
 .nav {
@@ -67,7 +71,7 @@ body {
 }
 .nav > .nav-links > ul li:hover{
     background-color: #3361C5;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .nav > #nav-check {
@@ -147,7 +151,7 @@ margin-right: 10px;
 
  /* Heor styling */
 .hero {
-    background-color: #3f3d56;
+    background-color: seashell;
   }
 
 .home{
@@ -160,7 +164,7 @@ margin-right: 10px;
 .home h1{
   font-size: 5.2vh;
   padding-bottom: 10px;
-  color: #fff;
+  color: #000;
 }
 
 .home span{
@@ -177,7 +181,7 @@ margin-right: 10px;
   font-size: 1.4rem;
   padding-bottom: 3.2vh;
   padding-left: 3.5vh;
-  color: #fff;
+  color: #000;
 }
 
 .home p span {
@@ -280,7 +284,6 @@ margin-right: 10px;
 
 section.features {
     padding: 2rem 0;
-    background-color: #3f3d56;
   }
   
   section.features .features-section {
@@ -303,7 +306,7 @@ section.features {
     justify-content: space-between;
   }
   
-  .features-section .qualities .quality {
+  .features-section .qualities #quality {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -316,24 +319,24 @@ section.features {
     transition: 0.7s ease;
   }
   
-  .features-section .qualities .quality:hover {
+  .features-section .qualities #quality:hover {
     transform: scale(1.1);
 
   }
   
-  .qualities .quality i {
+  .qualities #quality i {
     font-size: 2rem;
     color: #0D7BF2;
     margin-bottom: 1rem;
   }
   
-  .qualities .quality h3 {
+  .qualities #quality h3 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
     color: #fff;
   }
   
-  .qualities .quality p {
+  .qualities #quality p {
     font-size: 1.2rem;
     text-align: center;
     color: #fff;
@@ -479,3 +482,11 @@ tr:nth-child(odd){
    background-color: #d6d3d3;
 }
 
+#dark{
+   font-size: 22px;
+   border: #000 1px solid;
+   border-radius: 15px;
+   padding: 4px 4px 4px 4px;
+   background-color: #3361C5;
+   color: #fff;
+}
