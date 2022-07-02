@@ -266,3 +266,27 @@
   }
 
    }
+
+
+   #dark{
+    font-size: 22px;
+    border: #000 1px solid;
+    border-radius: 15px;
+    padding: 4px 4px 4px 4px;
+    background-color: #0D7BF2;
+    color: #fff;
+ }
+
+#editor{
+  font-size: 24.5px;
+  margin-right: 10px;
+  outline: none;
+  background-color: #0D7BF2;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.text{
+  text-decoration: none;
+  color: #fff;
+}

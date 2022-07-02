@@ -13,4 +13,7 @@ hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle("toggle");
 });
 
-
+function input(){
+    var namel=document.getElementById("textarea").value
+    document.getElementById("output").innerHTML = namel;
+ }
