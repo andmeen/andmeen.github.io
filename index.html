@@ -43,7 +43,7 @@
 <h1>مرحبا بك في <span>هوست</span></h1>
 <p>نقدم لك هوست لتعليم البرمجة, احسن جودة لتعلم البرمجة <span>جودة وسرعة وأمان</span> أثناء تصفحك</p>
 <button class="btn"><a href="myhtml.html">ابدا التعلم</a></button>
-</div><p class="hr"/>
+</div><p class="hr">
 <section class="features" id="features">
   <div class="features-section">
     <h4 class="why">  لماذا هوست احسن خيار ؟  </h4>
@@ -113,7 +113,9 @@
 <script>
   function myFunction() {
      var element = document.body;
+     var dark = document.getElementById("dark");
      element.classList.toggle("dark-mode");
+     dark.innerHTML = "الوضع الفاتح";
   }
   </script>
 </body>
