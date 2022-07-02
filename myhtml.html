@@ -31,6 +31,7 @@
               <li><a href="https://ameen121.netlify.app/" target="_blank">تابعني</a></li>
               <li><a href="https://hoststore.tabasher.io/" target="_blank">متجري</a></li>
               <li><a href="more.html">المزيد</a></li>
+              <li><button id="dark" onclick="myFunction()">الوضع الداكن</button></li>
             </ul>
         </div>
       </div><br>     
@@ -133,5 +134,13 @@
       </div>
 
 <script src="js/myjs.js"></script>
+<script>
+  function myFunction() {
+     var element = document.body;
+     var dark = document.getElementById("dark");
+     element.classList.toggle("dark-mode");
+     dark.innerHTML = "الوضع الفاتح";
+  }
+  </script>
 </body>
 </html>

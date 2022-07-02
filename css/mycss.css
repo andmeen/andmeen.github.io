@@ -9,6 +9,10 @@ body {
   background-color: #3f3d47;
 }
 
+.dark-mode {
+  background-color: #3f3d47;
+  color: white;
+}
 
 .nav {
   height: 50px;

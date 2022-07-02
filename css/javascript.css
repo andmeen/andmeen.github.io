@@ -5,6 +5,12 @@
   body {
 	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size:16px;
+  color: #fff;
+  }
+
+  .dark-mode {
+    background-color: #3f3d47;
+    color: white;
   }
 
   .nav {
@@ -163,7 +169,7 @@
 }
 
 .btn-thx{
-	color: #000;
+	color: #fff;
   background-color: #0D7BF2;
   border-radius: 15px;
   font-size: 25px;
@@ -174,7 +180,7 @@
 }
 
 .btn-thx:hover{
-	color: #fff;
+	color: #000;
 }
 
 .level{

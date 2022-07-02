@@ -31,6 +31,7 @@
               <li><a href="https://ameen121.netlify.app/" target="_blank">تابعني</a></li>
               <li><a href="https://hoststore.tabasher.io/" target="_blank">متجري</a></li>
               <li><a href="more.html">المزيد</a></li>
+              <li><button id="dark" onclick="myFunction()">الوضع الداكن</button></li>
             </ul>
         </div>
       </div> 
@@ -49,5 +50,13 @@
     <a href="https://api.whatsapp.com/send?phone=966559281499" class="float" target="_blank"><img style="width: 40px; height: 60px;" src="img/whatsapp.svg">
         <i class="fa fa-whatsapp my-float"></i></a>
 <script src="js/Test.js"></script>
+<script>
+  function myFunction() {
+     var element = document.body;
+     var dark = document.getElementById("dark");
+     element.classList.toggle("dark-mode");
+     dark.innerHTML = "الوضع الفاتح";
+  }
+  </script>
 </body>
 </html>
