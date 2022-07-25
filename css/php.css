@@ -8,7 +8,7 @@ body {
 }
 
 .dark-mode {
-  background-color: #3f3d47;
+  background-color: #2A2D30;
   color: white;
 }
 
@@ -141,4 +141,12 @@ margin-right: 10px;
     overflow-y: auto;
   }
 }
-   
+
+#dark{
+  font-size: 22px;
+  border: #000 1px solid;
+  border-radius: 15px;
+  padding: 4px 4px 4px 4px;
+  background-color: #2171C9;
+  color: #fff;
+}   

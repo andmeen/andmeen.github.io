@@ -4,13 +4,16 @@
   padding:0;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
-  font-size:16px;
-  background-color: #3f3d47;
+  font-family: "Tajawal", sans-serif;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
 }
 
 .dark-mode {
-  background-color: #3f3d47;
+  background-color: #2A2D30;
   color: white;
 }
 
@@ -156,7 +159,7 @@ margin-right: 10px;
 }
 
 .plan-inner {
-  background: #3f3d47;
+  /* background: #fff; */
   margin: 0 auto;
   min-width: 280px;
   max-width: 100%;
@@ -193,6 +196,7 @@ margin-right: 10px;
   position: absolute;
   bottom: -25px;
   background: #333;
+  color: #fff;
   height: 95px;
   width: 95px;
   margin: 0 auto;
@@ -214,9 +218,7 @@ margin-right: 10px;
   font-weight: 400;
 }
 
-.entry-content {
-  color: #fff;
-}
+
 
 .entry-content ul {
   margin: 0;
@@ -347,5 +349,13 @@ margin-right: 10px;
   font-size: 28px;
   width: 200px;
   height: 40px;
+}
+
+#dark{
+  font-size: 22px;
+  border: #000 1px solid;
+  border-radius: 15px;
+  padding: 4px 4px 4px 4px;
+  background-color: #2171C9;
   color: #fff;
 }

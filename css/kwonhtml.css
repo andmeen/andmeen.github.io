@@ -8,9 +8,9 @@
   }
 
   .dark-mode {
-	background-color: #3f3d47;
+	background-color: #2A2D30;
 	color: white;
-  }
+  }  
 
   .nav {
 	height: 50px;
@@ -209,13 +209,6 @@ button {
 	font-size: 20px;
 }
 
-.btn-thx{
-	color: #000;
-}
-
-.btn-thx:hover{
-	color: #0D7BF2;
-}
 
 .edit{
    text-align: left;
@@ -322,3 +315,12 @@ button {
 .sub:hover{
 	transform: scale(1.1);
 }
+
+#dark{
+	font-size: 22px;
+	border: #000 1px solid;
+	border-radius: 15px;
+	padding: 4px 4px 4px 4px;
+	background-color: #2171C9;
+	color: #fff;
+ }
