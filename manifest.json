@@ -1,6 +1,6 @@
 {
-    "name": "HOST",
-    "short_name": "Name",
+    "name": "Me",
+    "short_name": "Me",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#fdfdfd",
