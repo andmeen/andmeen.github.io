@@ -164,12 +164,12 @@ margin-right: 10px;
 .home h1{
   font-size: 5.2vh;
   padding-bottom: 10px;
-  color: #000;
-}
-
-.home span{
   color: #0D7BF2;
 }
+
+/* .home span{
+  color: #2A2D30;
+} */
 
 .home h3{
   font-size: 25px;
