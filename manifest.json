@@ -1,7 +1,7 @@
 {
     "name": "Me",
     "short_name": "Me",
-    "start_url": "/pwa.html",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#fdfdfd",
     "theme_color": "#db4938",
