@@ -359,3 +359,18 @@ margin-right: 10px;
   background-color: #2171C9;
   color: #fff;
 }
+
+.b-YouTube{
+  background: #0D7BF2;
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 9px 25px;
+  color: #fff;
+}
+
+.a-YouTube{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
