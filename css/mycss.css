@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Shizuru&family=Tajawal:wght@300;400&display=swap');
 
 *{
   margin:0;
   padding:0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 body {
@@ -349,6 +350,7 @@ margin-right: 10px;
   font-size: 28px;
   width: 200px;
   height: 40px;
+  padding-top: 10px;
 }
 
 #dark{
