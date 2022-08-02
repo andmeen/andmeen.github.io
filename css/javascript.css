@@ -257,7 +257,7 @@
     background-color: #0D7BF2;
     border-radius: 15px;
     font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Tajawal", sans-serif;
     padding: 2px 2px 2px 2px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -267,8 +267,7 @@
   .btn-thx:hover{
     color: #fff;
   }
-
-   }
+}
 
 
    #dark{
@@ -292,4 +291,7 @@
 .text{
   text-decoration: none;
   color: #fff;
+  font-family: "Tajawal", sans-serif;
+  outline: none;
+  border-radius: 10px;
 }
