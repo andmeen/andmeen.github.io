@@ -368,6 +368,12 @@ margin-right: 10px;
   border-radius: 15px;
   padding: 9px 25px;
   color: #fff;
+  transition: 0.7s ease;
+  border: 1px solid black;
+}
+
+.b-YouTube:hover{
+  transform: scale(1.1);
 }
 
 .a-YouTube{
