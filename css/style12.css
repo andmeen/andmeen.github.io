@@ -436,6 +436,8 @@ ul {
   width: 350px;
   display:block;
   margin: 0 auto;
+  background-color: #fff;
+  border-radius: 15px;
 }
 .social-icon {
   color: #fff;
@@ -489,4 +491,9 @@ tr:nth-child(odd){
    padding: 4px 4px 4px 4px;
    background-color: #2171C9;
    color: #fff;
+}
+
+.Pro_img{
+  border:1px solid black;
+  border-radius: 15px;
 }
