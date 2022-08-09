@@ -496,4 +496,5 @@ tr:nth-child(odd){
 .Pro_img{
   border:1px solid black;
   border-radius: 15px;
+  margin-right: -30px;
 }
