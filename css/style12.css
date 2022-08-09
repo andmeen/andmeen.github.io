@@ -492,9 +492,3 @@ tr:nth-child(odd){
    background-color: #2171C9;
    color: #fff;
 }
-
-.Pro_img{
-  margin-right: -30px;
-  border: #fff 10px solid;
-  border-radius: 10px;
-}
