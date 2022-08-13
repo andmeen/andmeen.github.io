@@ -295,3 +295,22 @@
   outline: none;
   border-radius: 10px;
 }
+
+.all-videos{
+  display: inline-block;
+}
+
+.video-btn{
+  font-size: 25px;
+  background-color: #0D7BF2;
+  color: #fff;
+  outline: none;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 6px 6px 6px 6px;
+}
+
+.edit{
+  text-decoration: none;
+  color: #fff;
+}
