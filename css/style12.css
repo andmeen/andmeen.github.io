@@ -475,7 +475,7 @@ th, td{
 }
 
 tr:nth-child(even){
-   background-color: #f5f1f1;
+   background-color: #fac001;
 }
 
 tr:nth-child(odd){
@@ -489,4 +489,30 @@ tr:nth-child(odd){
    padding: 4px 4px 4px 4px;
    background-color: #2171C9;
    color: #fff;
+}
+
+.index {
+   text-align: center;
+   background-color: #325EF5;
+   color: white;
+   padding-bottom: 30px;
+   padding-top: 10px;
+   font-size: 21px;
+}
+
+.index span{
+  color: #F6FD05;
+} 
+
+.index button{
+  width: 7rem;
+  padding: 4px 4px 4px 4px;
+  height: 2.5rem;
+  background-color: #2A2D30;
+  border: #2A2D30 solid 2px;
+  border-radius: 6px;
+}
+
+.index button a{
+  font-size: 22px;
 }
