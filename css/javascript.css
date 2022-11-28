@@ -187,7 +187,7 @@
 
 .level{
   text-align: center;
-  color: #0D7BF2;
+  color: #F7E018;
   padding-top: 15px;
 }
 
@@ -238,15 +238,14 @@
 
 
   .video{
-    border: 6px #0D7BF2 solid;
-    border-radius: 10px;
+    /* border: 6px #0D7BF2 solid; */
+    border-radius: 14px;
     margin-left: 10px;
   }
 
   @media screen and (max-width: 767px) {
    .video{
-     border: 6px #0D7BF2 solid;
-     border-radius: 10px;
+     border-radius: 14px;
      margin-left: 10px;
      width: 340px;
      height: 300px;
