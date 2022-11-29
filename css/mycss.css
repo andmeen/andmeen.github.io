@@ -382,3 +382,7 @@ margin-right: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
+
+.check{
+  border-radius: 15px;
+}
