@@ -166,15 +166,14 @@ margin-bottom: 30px;
  font-size: 30px;
  color: #0D7BF2;
  text-align: center;
- border: #131418 3px solid;
  border-radius: 15px;
  border-width: 2px;
  padding: 10px 10px 5px 5px;
 }
 
 .link:hover{
-  border: #0D7BF2 3px solid;
   border-width: 3px;
+  color: #0b65af;
 }
 
 p{
