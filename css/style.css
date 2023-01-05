@@ -602,3 +602,24 @@ tr:nth-child(odd){
     padding: 0 1em;
   }
 }
+
+.contanier{
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  background-color: #fac001;
+  border: #070024 1px solid;
+}
+
+.footer-3{
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.footer-h3{
+  font-size: 23px;
+  font-weight: normal;
+  color: #0D7BF2;
+}
