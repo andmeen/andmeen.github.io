@@ -1,150 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Shizuru&family=Tajawal:wght@300;400&display=swap');
 
 *{
+  font-family: "Tajawal", sans-serif;
   margin: 0;
   padding: 0;
-  font-size: "Tajawal", sans-serif;
-  font-weight: normal;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Tajawal", sans-serif;
-}
-
-.dark-mode {
-  background-color: #2A2D30;
-  color: white;
-}
-
-.nav {
-height: 50px;
-width: 100%;
-background-color: #1177ca;
-position: relative;
-}
-
-.nav > .nav-header {
-display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-display: inline-block;
-font-size: 30px;
-margin-left: 10px;
-color: #fff;
-font-weight: 10px;
-margin-bottom: 10px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-float: left;
-}
-
-.nav > .nav-btn {
-display: none;
-}
-
-.nav > .nav-links {
-display: inline;
-float: right;
-font-size: 18px;
-}
-.nav > .nav-links > ul li a{
-display: block;
-padding: 0 8px;
-color: #fff;
-line-height: 40px;
-font-size: 24px;
-text-decoration: none;
-text-align: center;
-}
-.nav > .nav-links > ul{
-padding: 0;
-margin-top: 5px;
-list-style: none;
-position: relative;
-}
-.nav > .nav-links > ul li{
-display: inline-block;
-background-color: #1177ca;
-}
-.nav > .nav-links > ul li:hover{
-  background-color: #0b65af;
-  border-radius: 5px;
-}
-
-.nav > #nav-check {
-display: none;
-}
-
-.nav .nav-links ul a.icon{
-margin-left: 80px;
-margin-right: 10px;
-}
-
-.nav .nav-links ul a i{
-background-color: #fff;
-border-radius: 50px;
-padding: 7px;
-margin-left: 5px;
-}
-
-
-@media (max-width:750px) {
-.nav > .nav-btn {
-  display: inline-block;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.nav > .nav-btn > label {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  padding: 13px;
-}
-.nav > .nav-btn > label > span {
-  display: block;
-  width: 25px;
-  height: 10px;
-  border-top: 2px solid #eee;
-}
-.nav > .nav-links {
-  position: absolute;
-  display: block;
+header{
+  background-color: #fff;
   width: 100%;
-  background-color: #333;
-  height: 0px;
-  transition: all 0.3s ease-in;
-  overflow-y: hidden;
-  top: 50px;
-  left: 0px;
-  z-index: 1;
-}
-.nav > .nav-links > ul li a {
-  display: block;
-  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px ;
 }
 
-  .nav > .nav-links > ul li{
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-    background-color: #333;
+.logo{
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
 
-  }
-  .nav > .nav-links > ul li a{
-      margin-left: 40%;
-  }
-  .nav .nav-links ul a.icon{
-    margin-left: 33%;
-  }
-.nav > #nav-check:not(:checked) ~ .nav-links {
-  height: 0px;
+.navgiation a{
+ color: #000;
+ text-decoration: none;
+ font-size: 1.4em;
+ font-weight: 500;
+ padding-left: 30px;
 }
-.nav > #nav-check:checked ~ .nav-links {
-  height: calc(100vh - 50px);
-  overflow-y: auto;
+
+.navgiation a:hover{
+  color: #0D7BF2;
 }
-}
+
 
 .hr{
 border: 2px #0D7BF2 solid;
