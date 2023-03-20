@@ -8,10 +8,6 @@
     scroll-behavior: smooth;
 }
 
-body{
-  background-color: #0D7BF2;
-}
-
 header{
     background-color: #fff;
     width: 100%;
@@ -20,7 +16,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px;
+    padding: 10px 200px ;
 }
 
 .logo{
@@ -42,6 +38,7 @@ header{
 .navgiation a:hover{
     color: #0D7BF2;
 }
+
 
 section{
     padding: 100px 200px;

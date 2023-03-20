@@ -1,45 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Shizuru&family=Tajawal:wght@300;400&display=swap');
 
 *{
-  font-family: "Tajawal", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    font-family: "Tajawal", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header{
-  background-color: #fff;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 200px ;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
 }
 
 .logo{
-  text-decoration: none;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.8em;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
 }
 
 .navgiation a{
- color: #000;
- text-decoration: none;
- font-size: 1.4em;
- font-weight: 500;
- padding-left: 30px;
+   color: #000;
+   text-decoration: none;
+   font-size: 1.4em;
+   font-weight: 500;
+   padding-left: 30px;
 }
 
 .navgiation a:hover{
-  color: #0D7BF2;
+    color: #0D7BF2;
 }
 
-  .float{
+.float{
 	position:fixed;
 	width:60px;
 	height:60px;
@@ -194,4 +194,56 @@ button {
   padding: 4px 4px 4px 4px;
   background-color: #2171C9;
   color: #fff;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navgiation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
 }
