@@ -135,3 +135,21 @@ header{
       font-size: 10px;
   }
 }
+
+.faetah1{
+    color: red;
+}
+
+.faetah2{
+    color: #0D7BF2;
+}
+
+.writing{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.result{
+    text-align: right;
+    padding-right: 10px;
+}
