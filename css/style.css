@@ -59,6 +59,7 @@ section{
     font-weight: 500;
 }
 
+
 .main h2 span{
     display: inline-block;
     margin-top: 9px;
@@ -113,6 +114,14 @@ section{
     font-size: 29px;
     color: #0D7BF2; 
     margin-bottom: 5px;
+}
+
+.Subject .ramadan{
+    color: #F6D33A;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 60px;
+    font-size: 32px;
 }
 
 .Subject h3{
