@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Shizuru&family=Tajawal:wght@300;400&display=swap');
+
+*{
+    font-family: "Tajawal", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navgiation a{
+   color: #000;
+   text-decoration: none;
+   font-size: 1.4em;
+   font-weight: 500;
+   padding-left: 30px;
+}
+
+.navgiation a:hover{
+    color: #0D7BF2;
+}
