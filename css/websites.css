@@ -38,3 +38,31 @@ header{
 .navgiation a:hover{
     color: #0D7BF2;
 }
+
+.First{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #0D7BF2;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.links{
+    text-align: right;
+    text-decoration: none;
+    font-size: 36px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 35px;
+    color: slateblue;
+    margin-top: 10px;
+}
+
+.links a:hover{
+    color: #0D7BF2;
+}
