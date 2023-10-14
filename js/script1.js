@@ -39,3 +39,6 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
     document.title = docTitle;
 })
+
+
+console.log("%c hhhh  ", "font-size: 35px")
