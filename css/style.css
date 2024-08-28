@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
   --white: #fff;
   --gray: #c4c4c4;
-  --light-purple: #564ccf;
+  --light-purple: #6559ef;
   --dark-purple: #4c3fe2;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-  background-color: #1e2028;
+  background-color: #faf5f5;
   font-family: "Tajawal", sans-serif;
 }
 
@@ -38,7 +39,7 @@ nav {
 
 nav #mobile-toggle {
   display: none;
-  color: var(--white);
+  color: var(--black);
   font-size: 2rem;
   cursor: pointer;
 }
@@ -58,12 +59,12 @@ nav .nav-items .nav-item {
 }
 
 .nav-item .nav-link {
-  color: var(--gray);
+  color: var(--black);
   text-decoration: none;
 }
 
 .nav-item .nav-link:hover {
-  color: #faf5f5;
+  color: #252731;
   text-decoration: none;
 }
 
@@ -71,7 +72,7 @@ nav .nav-items .nav-item {
   font-family: inherit;
   padding: 0.75rem 2rem;
   border: none;
-  color: white;
+  color: #252731;
   border-radius: 1rem;
   cursor: pointer;
   font-size: 1rem;
@@ -100,8 +101,8 @@ nav .nav-items .nav-item {
   font-size: 3rem;
   width: 40%;
   text-align: center;
-  color: var(--white);
-  font-weight: 600;
+  color: var(--#252731);
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
@@ -127,9 +128,10 @@ nav .nav-items .nav-item {
 }
 
 .features h3 {
-  color: var(--white);
-  font-size: 2rem;
+  color: var(--black);
+  font-size: 2.50rem;
   margin-bottom: 1rem;
+  font-weight: 350;
 }
 
 .features h6 {
@@ -139,9 +141,9 @@ nav .nav-items .nav-item {
 }
 
 .feature {
-  background-color: #6a81f8;
+  background-color: #252731;
   display: flex;
-  border-radius: 3rem;
+  border-radius: 4.5rem;
   overflow: hidden;
   margin-bottom: 3rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -159,7 +161,7 @@ nav .nav-items .nav-item {
 }
 
 .feature .content h2 {
-  color: white;
+  color: #0b6bee ;
   margin-bottom: 2.3rem;
 }
 
@@ -189,14 +191,10 @@ nav .nav-items .nav-item {
 }
 
 .details h2 {
-  color: var(--white);
-  font-size: 2rem;
+  color: var(--black);
+  font-size: 2.50rem;
   margin-bottom: 1rem;
-}
-
-.details h6 {
-  color: var(--gray);
-  font-size: 1rem;
+  font-weight: 350;
 }
 
 .details-list {
@@ -359,7 +357,8 @@ footer .icon:hover {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 20px;
-  background-color: #4c3fe2;
+  background-color: #200fdccb;
+  border: 1px solid #3727f1cb;
 }
 
 .lan_button2{
@@ -367,4 +366,10 @@ footer .icon:hover {
   font-size: 23px;
   color: #fff;
   font-family: 'Rubik', sans-serif;
+}
+
+.start-button{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
