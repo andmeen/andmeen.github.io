@@ -1,6 +1,6 @@
 {
     "name": "HOST | هوست",
-    "short_name": "HOST | هوست",
+    "short_name": "HOST",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#fff",
