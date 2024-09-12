@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
   --white: #fff;
@@ -13,7 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Rubik', sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 html {
@@ -22,7 +22,7 @@ html {
 
 body {
   background-color: #d1d0cf;
-  font-family: "Tajawal", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 main {
@@ -71,7 +71,7 @@ nav .nav-items .nav-item {
 }
 
 .cta {
-  font-family: inherit;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   padding: 0.75rem 2rem;
   border: none;
   color: #252731;
@@ -86,7 +86,7 @@ nav .nav-items .nav-item {
 }
 
 .cta.dark:hover {
-  background-color: #2b2c31;
+  background-color: #4c3fe2;
 }
 
 /* القسم الأساسي */
@@ -133,7 +133,7 @@ nav .nav-items .nav-item {
   color: var(--black);
   font-size: 2.50rem;
   margin-bottom: 1rem;
-  font-weight: 350;
+  font-weight: 330;
 }
 
 .features h6 {
@@ -235,11 +235,12 @@ nav .nav-items .nav-item {
 footer {
   background-color: #7185ea;
   min-height: 25vh;
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 footer h3 {
@@ -247,15 +248,14 @@ footer h3 {
   font-size: 2rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid white;
   width: 100%;
   text-align: center;
-  font-weight: 440;
+  font-weight: 430;
 }
 
 footer p {
   font-size: 1.5rem;
-
   color: var(--white);
   margin-bottom: 1rem;
 }
@@ -378,7 +378,7 @@ footer .icon:hover {
   text-decoration: none;
   font-size: 23px;
   color: #fff;
-  font-family: 'Rubik', sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 .start-button{
@@ -395,7 +395,6 @@ footer .icon:hover {
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #d1d0cf; 
-  border-radius: 10px;
 }
  
 /* Handle */
