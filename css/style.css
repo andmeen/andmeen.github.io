@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-  --white: #fff;
-  --gray: #c4c4c4;
+  --white: #d1d0cf;
+  --gray: #d1d0cf;
   --light-purple: #6559ef;
   --dark-purple: #4c3fe2;
   scroll-behavior: smooth;

@@ -3,7 +3,7 @@
     "short_name": "HOST",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#4c3fe2",
+    "background_color": "#d1d0cf",
     "orientation": "portrait-primary",
     "icons": [
         {
