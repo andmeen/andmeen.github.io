@@ -407,3 +407,47 @@ footer .icon:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #d1d0cf; 
 }
+
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  color: white;
+  font-size: 15px;
+  background-color: #192733;
+  border-radius: 12px;
+  padding: 10px 15px 10px 15px;
+}
+
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: #192733;
+  padding: 5px;
+  z-index: 1;
+}
+
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+#bottom {
+  top: 55px;
+  left: 10%;
+}
+
+#bottom::before {
+  top: -5%;
+  left: 45%;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  font-family: Arial;
+  text-align: center;
+}

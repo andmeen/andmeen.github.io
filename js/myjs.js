@@ -1,14 +1,11 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+const mobileToggle = document.getElementById("mobile-toggle");
 
-hamburger.addEventListener('click', ()=>{
-   //Animate Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
+mobileToggle.addEventListener("click", () => {
+  document.querySelector(".nav-items").classList.toggle("active");
+});
 
-    //Hamburger Animation
-    hamburger.classList.toggle("toggle");
+const navLinks = document.querySelectorAll(".nav-item").forEach((navItem) => {
+  navItem.addEventListener("click", () => {
+    document.querySelector(".nav-items").classList.toggle("active");
+  });
 });
