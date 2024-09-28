@@ -501,3 +501,28 @@ footer .icon:hover {
   font-family: Arial;
   text-align: center;
 }
+
+.pre-loader {
+    position: fixed;
+    z-index: 100; /** make sure this is the highest value compared to all other divs **/
+    top: 0;
+    left: 0;
+    background: #191f26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pre-loader.hidden {
+    animation: fadeOut 2s; /** change to 1s */
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
