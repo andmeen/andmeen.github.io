@@ -66,9 +66,11 @@ nav .nav-items .nav-item {
 }
 
 .nav-item .nav-link:hover {
-  color: #252731;
+  color: #4c3fe2;
   text-decoration: none;
+  transition: color 0.4s;
 }
+
 
 .cta {
   font-family: "IBM Plex Sans Arabic", sans-serif;
