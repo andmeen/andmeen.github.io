@@ -320,7 +320,7 @@ footer .icon:hover {
   nav #mobile-toggle {
     display: block;
   }
-  nav .nav-items {
+nav .nav-items {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -328,7 +328,7 @@ footer .icon:hover {
     left: 0;
     top: 12vh;
     width: 100%;
-    height: 50%;
+    height: 75%;
     background-color: #252525;
     color: white;
     border-top-right-radius: 15px;
