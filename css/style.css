@@ -518,7 +518,7 @@ footer .icon:hover {
   position: relative;
   display: inline-block;
   margin: 40px;
-  font-family: Arial;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   text-align: center;
 }
 
@@ -545,4 +545,13 @@ footer .icon:hover {
         opacity: 0;
         visibility: hidden;
     }
+}
+
+#jstext{
+  text-align: center;
+  font-weight: 200;
+  font-family:'Courier New', Courier, monospace;
+  line-height: 70px;
+  margin: 0px 20px;
+  letter-spacing: 3px;
 }
