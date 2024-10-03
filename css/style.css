@@ -133,6 +133,7 @@ nav .nav-items {
 
 nav .nav-items .nav-item {
   padding-left: 2rem;
+  margin-top: 10px;
 }
 
 .nav-item .nav-link {
@@ -400,16 +401,16 @@ footer .icon:hover {
     flex-direction: column;
     position: absolute;
     justify-content: center;
-    left: 0;
-    top: 12vh;
-    width: 100%;
+    top: 10vh;
+    width: 90%;
     height: 75%;
     background-color: #252525;
     color: white;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border: #fff 5px solid;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 
   nav .nav-items.active {
