@@ -401,7 +401,7 @@ footer .icon:hover {
     flex-direction: column;
     position: absolute;
     justify-content: center;
-    top: 10vh;
+    top: 13.5vh;
     width: 90%;
     height: 75%;
     background-color: #252525;
@@ -561,4 +561,49 @@ footer .icon:hover {
   line-height: 70px;
   margin: 0px 20px;
   letter-spacing: 3px;
+}
+
+.imageshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default  */
+.imageClass {
+    display: none;
+}
+
+/* Adding fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Defining the dot styles */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Setting a different style for hovering and active */
+.active,
+.dot:hover {
+    background-color: #717171;
 }

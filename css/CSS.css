@@ -325,7 +325,7 @@ footer .icon:hover {
     flex-direction: column;
     position: absolute;
     justify-content: center;
-    top: 10vh;
+    top: 13.5vh;
     width: 90%;
     height: 75%;
     background-color: #252525;
@@ -336,6 +336,7 @@ footer .icon:hover {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
   }
+
 
 
 
