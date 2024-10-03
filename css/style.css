@@ -3,8 +3,8 @@
 :root {
   --white: #d1d0cf;
   --gray: #d1d0cf;
-  --light-purple: #6559ef;
-  --dark-purple: #4c3fe2;
+  --light-purple: #FFB923;
+  --dark-purple: #FFB923;
   scroll-behavior: smooth;
   --background-color-light: #D1D0CF;
   --text-color-light: #000000;
@@ -93,6 +93,12 @@ body {
   padding: 10px 10px;
   border: #6559ef 1px solid;
   border-radius: 15px;
+}
+
+.dark_button:hover{
+  background-color: #FFB923;
+  border: #FFB923 1px solid;
+  transition: 0.6s;
 }
 
 main {
