@@ -62,6 +62,13 @@
   text-align: center;
 }
 
+@media screen and (max-width: 932px) {
+   .website_img{
+    width: 85%;
+    height: 85%;
+    margin-top: -50%;
+   }
+}
 
 * {
   margin: 0;
@@ -426,9 +433,10 @@ footer .icon:hover {
 
 .logo{
   margin-top: 1%;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
+  border: #4c3fe2 0.9px solid;
 }
 
 .icons_img{
