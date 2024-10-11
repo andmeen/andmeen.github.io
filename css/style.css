@@ -318,7 +318,7 @@ nav .nav-items .nav-item {
 
 /* التذييل */
 footer {
-  background-color: #7185ea;
+  background-color: #FFB923;
   min-height: 25vh;
   padding: 1rem 0;
   display: flex;
@@ -433,8 +433,8 @@ footer .icon:hover {
 
 .logo{
   margin-top: 1%;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 50px;
   border: #4c3fe2 0.9px solid;
 }
@@ -442,6 +442,14 @@ footer .icon:hover {
 .icons_img{
   width: 50px;
   height: 50px;
+  border: #000000 2px solid;
+  border-radius: 15px;
+  padding: 5px 5px;
+}
+
+.icons_img:hover{
+  background-color: #fff;
+  transition: 0.6s;
 }
 
 .lan_img{
@@ -586,8 +594,8 @@ footer .icon:hover {
 .img_dot {
     width: 100%;
     vertical-align: middle;
-    border: #4c3fe2 4px solid;
-    border-radius: 15px;
+    border: #FFB923 4px solid;
+    border-radius: 35px;
 }
 
 /* Next and previous buttons */

@@ -22,21 +22,26 @@ function pagereason() {
   });
 }
 
- function close_page() {
-   // Open a new window
-   const newWindow = window.open(
-     "about:blank",
-     "_blank",
-     "width=500,height=500"
-   );
+//  function close_page() {
+//    // Open a new window
+//    const newWindow = window.open(
+//      "about:blank",
+//      "_blank",
+//      "width=500,height=500"
+//    );
 
-   // Set content of the new window
-   newWindow.document.write(
-     '<h1>Popup Window</h1><button onclick="window.close()">Close this Window</button>'
-   );
+//    // Set content of the new window
+//    newWindow.document.write(
+//      '<h1></h1><button onclick="window.close()">Close this Window</button>'
+//    );
 
-   // Auto-close the popup window after 5 seconds
-   setTimeout(() => {
-     newWindow.close();
-   }, 5000); // Close after 5 seconds
- }
+//    // Auto-close the popup window after 5 seconds
+//    setTimeout(() => {
+//      newWindow.close();
+//    }, 5000); // Close after 5 seconds
+// }
+ 
+// Set Item
+localStorage.setItem("Languages: ", "HTML, CSS, JAVASCRIPT, FLUTTER");
+// Retrieve
+document.getElementById("demo").innerHTML = localStorage.getItem(setItem);
