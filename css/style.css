@@ -763,3 +763,13 @@ footer .icon:hover {
     text-decoration: none;
     color: red;
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: #717171;
+  background-color: #4c3fe2;
+}
+
+::selection {
+  color: #717171;
+  background-color: #4c3fe2;
+}
