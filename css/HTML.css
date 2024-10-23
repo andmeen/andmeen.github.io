@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
-:root {
+/* :root {
   --white: #fff;
   --gray: #c4c4c4;
   --light-purple: #6559ef;
   --dark-purple: #4c3fe2;
   scroll-behavior: smooth;
-}
+} */
 
 * {
   margin: 0;
@@ -14,6 +14,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "IBM Plex Sans Arabic", sans-serif;
+  background-color: #192733;
 }
 
 html {
@@ -395,6 +396,32 @@ footer .icon:hover {
   border-radius: 20px;
 }
 
+.pre-loader {
+    position: fixed;
+    z-index: 100; /** make sure this is the highest value compared to all other divs **/
+    top: 0;
+    left: 0;
+    background: #191f26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pre-loader.hidden {
+    animation: fadeOut 2s; /** change to 1s */
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
 
 .tooltip-text {
   visibility: hidden;
@@ -437,4 +464,14 @@ footer .icon:hover {
   margin: 40px;
   font-family: Arial;
   text-align: center;
+}
+
+.nopage{
+  color: #c4c4c4;
+  text-align: center;
+  margin-top: 15%;
+}
+
+h2{
+  color: red;
 }

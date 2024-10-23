@@ -296,7 +296,13 @@ nav .nav-items .nav-item {
   padding: 3rem;
   border-radius: 2rem;
   color: var(--white);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.5);
+  border: #4c3fe2 3px solid;
+  transition: 0.5s;
+}
+
+.detail:hover{
+  transform: translateY(-20px);
 }
 
 .detail i {
