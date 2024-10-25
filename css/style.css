@@ -95,16 +95,16 @@ body {
 
 .dark_button{
   font-size: 18px;
-  background-color: #6559ef;
+  background-color: #FFB923;
   color: #fff;
   padding: 10px 10px;
-  border: #6559ef 1px solid;
+  border: #FFB923 1px solid;
   border-radius: 15px;
 }
 
 .dark_button:hover{
-  background-color: #FFB923;
-  border: #FFB923 1px solid;
+  background-color: #232b2b;
+  border: #232b2b 1px solid;
   transition: 0.6s;
 }
 
@@ -166,7 +166,7 @@ nav .nav-items .nav-item {
 }
 
 .cta.dark {
-  background-color: #252731;
+  background-color: #3586ff;
   transition: background-color 0.5s;
 }
 
