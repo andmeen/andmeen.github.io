@@ -11,9 +11,16 @@ body{
   font-family: "Alexandria", sans-serif;
 }
 
+.info{
+  background: #747472;
+  border: #000 3px solid;
+  border-radius: 30px;
+  padding: 10px 10px;
+  width: 650px;
+}
+
 h2{
-  color: #fff;
+  color: #252525;
   text-align: right;
   margin-right: 1%;
-  
 }
