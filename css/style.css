@@ -228,12 +228,13 @@ nav .nav-items .nav-item {
 }
 
 .feature {
-  background-color: #252731;
+  background-color: #4c3fe2;
   display: flex;
   border-radius: 4.5rem;
   overflow: hidden;
   margin-bottom: 3rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  width: 900px;
 }
 
 .feature .content {
