@@ -27,12 +27,19 @@ function toggleDarkMode() {
 }
 
 // On page load
-document.addEventListener("DOMContentLoaded", (event) => {
-  if (localStorage.getItem("darkMode") === "enabled") {
-    document.body.classList.add("dark-mode");
-  }
+window.addEventListener('load', () => {
+  const overlay = document.querySelector('.overlay');
+  const content = document.querySelector('.content');
+  
+  // بعد فترة معينة (مثلاً 3 ثواني)، نغلق الـ overlay ونظهر المحتوى
+  setTimeout(() => {
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+      overlay.style.display = 'none'; // إخفاء الـ overlay بعد التلاشي
+      content.style.display = 'block'; // إظهار المحتوى
+    }, 1000); // تأخير بسيط ليكتمل التلاشي
+  }, 1000); // فترة العرض للانيميشن (3 ثواني)
 });
-
 
 let slideIndex = 1;
 showSlides(slideIndex);

@@ -913,29 +913,44 @@ footer .icon:hover {
   text-align: center;
 }
 
-.pre-loader {
-    position: fixed;
-    z-index: 100; /** make sure this is the highest value compared to all other divs **/
-    top: 0;
-    left: 0;
-    background: #191f26;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease-out;
 }
 
-.pre-loader.hidden {
-    animation: fadeOut 2s; /** change to 1s */
-    animation-fill-mode: forwards;
+.animation-box {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  transform: scale(0);
+  animation: fadeInUp 1s forwards;
 }
 
-@keyframes fadeOut {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
+.content {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #jstext{
