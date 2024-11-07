@@ -76,5 +76,3 @@ function showSlides(n) {
 }
 
 
-
-console.log("%c!!! ايش تدور", "color: red; font-size: 20px");
