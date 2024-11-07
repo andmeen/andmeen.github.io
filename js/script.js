@@ -11,11 +11,6 @@ const navLinks = document.querySelectorAll(".nav-item").forEach((navItem) => {
   });
 });
 
-// Loader
- window.addEventListener("load", function () {
-   document.querySelector(".pre-loader").className += " hidden";
- });
-
 // Dark/light Mode
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
