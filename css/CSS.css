@@ -13,7 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 html {
@@ -22,7 +22,6 @@ html {
 
 body {
   background-color: #d1d0cf;
-  font-family: "Tajawal", sans-serif;
 }
 
 main {
@@ -432,7 +431,7 @@ footer .icon:hover {
   text-align: center;
   font-weight: 500;
   font-size: 40px;
-  color: #0849ed;
+  color: #fff;
   margin-top: 4%;
   margin-bottom: 4%;
 }

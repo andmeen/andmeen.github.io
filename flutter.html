@@ -17,12 +17,14 @@
     <title>Flutter HOST | فلاتر هوست</title>
   </head>
   <body> 
-      <div class='pre-loader'>
-  <center>
-     <h2 style="color: #fff; text-align: center; font-size: 55px; font-weight: 450;">انتظر شويات</h2><br>
-     <p style="color: #6559ef; margin-top: 10px;">"اذا تأخر الموقع في التحميل تأكد من صحة الانترنت"</p><br>
-     <p style="color: #6559ef; margin-top: 10px;">عاداً مايخذا اكثر من 20 ثانية</p>
+    <!--Loading-->
+     <div class="overlay">
+    <div class="animation-box">
+      <h1 style="font-weight: 350;">حياك في <span style="color: #FFB923;">هوست</span></h1><br>
+       <span class="loader"></span>
     </div>
+  </div>
+
     <main>
       <!-- التنقل -->
       <nav>
@@ -39,9 +41,6 @@
           </li>
           <li class="nav-item">
             <a href="media.html" class="nav-link">مواقع التواصل الاجتماعي</a>
-          </li>
-            <li class="nav-item"></li>
-            <a href="#" class="nav-link"><button class="dark_button" onclick="toggleDarkMode()">تغير ثيم الموقع</button></a>
           </li>
         </ul>
         <div class="hover-text">
