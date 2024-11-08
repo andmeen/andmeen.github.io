@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Kufam:ital,wght@0,400..900;1,400..900&family=Markazi+Text:wght@400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruwudu:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 :root {
   --white: #d1d0cf;
@@ -28,7 +28,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: "Tajawal", serif;
 }
   
 html {
@@ -38,8 +38,8 @@ html {
 body {
   font-family: "IBM Plex Sans Arabic", sans-serif;
   /* background-color: var(--background-color-light); */
-  background: linear-gradient(to right, #6559ef 50%, #6802f7);
-  color: var(--text-color-light);
+  background: linear-gradient(to right, #1c4266, #1a1e49);
+  color: #fff;
 }
 
 .dark-mode {
@@ -854,16 +854,20 @@ nav .nav-items .nav-item {
   margin-bottom: 20px;
   padding-top: 3px;
   padding-bottom: 5px;
-  background-color: #200fdccb;
+  background-color: #1a1e49;
   border: 1px solid #3727f1cb;
   font-weight: 340;
+}
+
+.lan_button:hover{
+  background-color: #1c4266;
 }
 
 .lan_button2{
   text-decoration: none;
   font-size: 23px;
   color: #fff;
-  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: "Tajawal", serif;
 }
 
 .start-button{
@@ -1099,13 +1103,13 @@ nav .nav-items .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 8%;
 }
 
 .flex-container > div {
-  background-color: #5606f4;
-  border: 2px solid #fff;
-  width: 350px;
-  padding: 9px;
+  background-color: #1c344a;
+  width: 390px;
+  padding: 13px;
   border-radius: 13px;
   color: #fff;
   margin: 10px;
@@ -1114,4 +1118,9 @@ nav .nav-items .nav-item {
   font-size: 25px;
   margin-bottom: 3%;
   box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.flex-container > div:hover{
+  transform: translateY(-20px);
 }
