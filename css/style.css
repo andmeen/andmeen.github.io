@@ -121,9 +121,6 @@ nav .nav-items .nav-item {
 
 .cta.dark {
   background-color: #3586ff;
-  padding: 10px;
-  font-size: 19px;
-  border-radius: 30px;
   transition: background-color 0.5s;
 }
 
