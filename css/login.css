@@ -1,43 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Kufam:ital,wght@0,400..900;1,400..900&family=Markazi+Text:wght@400..700&family=Ruwudu:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Kufam:ital,wght@0,400..900;1,400..900&family=Markazi+Text:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruwudu:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Kufam:ital,wght@0,400..900;1,400..900&family=Markazi+Text:wght@400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruwudu:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 body{
-  background: #252525;
+  background: linear-gradient(to right, #d0d0d0, #FFB923);
 }
 
 .title{
-  color: #FFB923;
+  color: #fff;
   text-align: center;
   letter-spacing: 1px;
   text-shadow: 15px 20px 40px #fff;
   margin-top: 40px;
-  font-family: "Alexandria", sans-serif;
+  font-family: "Tajawal", serif;
 }
 
 .container form{
-  background-color: #e4e2e2;
+  background-color: #3d3b3b;
   color: #252525;
-  width: 350px;
-  height: 420px;
+  width: 450px;
+  height: 655px;
   padding: 20px 20px;
-  border: #e4e2e2 1px solid;
   border-radius: 15px;
   margin-top: 3%;
-  font-family: "Alexandria", sans-serif;
+  font-family: "Tajawal", serif;
+  box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.5);
 }
 
-.container input{
+.container input,::placeholder{
   padding: 5px 5px;
   width: 300px;
   height: 30px;
-  color: #fff;
-  border: #fff 1px solid;
+  margin-left: 135px;
   border-radius: 10px;
   padding-right: 5%;
-  background-color: #252525;
-  font-size: 18px;
-  font-family: "Alexandria", sans-serif;
+  background-color: #fcb103;
+  color: #fff;
+  font-size: 21px;
+  font-family: "Tajawal", serif;
 }
 
 .login {
@@ -49,14 +47,14 @@ body{
   height: 40px;
   border: #252525 1px solid;
   border-radius: 7px;
-  font-family: "Alexandria", sans-serif;
+  font-family: "Tajawal", serif;
 }
 
 .login a{
   color: #fff;
   text-decoration: none;
   font-size: 21px;
-  font-family: "Alexandria", sans-serif;
+  font-family: "Tajawal", serif;
 }
 
 .google{
@@ -69,7 +67,7 @@ body{
   border-radius: 7px;
   color: #fff;
   font-size: 18px;
-  font-family: "Alexandria", sans-serif;
+  font-family: "Tajawal", serif;
 }
 
 .svg{
@@ -80,5 +78,7 @@ body{
 }
 
 .text{
-  font-family: "Alexandria", sans-serif;
+  font-family: "Tajawal", serif;
+  color: #d4d4d4;
+  font-size: 23px;
 }

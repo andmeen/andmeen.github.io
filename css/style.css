@@ -136,6 +136,7 @@ nav .nav-items .nav-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 6%;
 }
 
 .hero h1 {
