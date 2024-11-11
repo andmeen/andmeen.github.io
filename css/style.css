@@ -75,6 +75,10 @@ nav {
   margin-top: 15px;
 }
 
+.change-color{
+  background: linear-gradient(45deg, blue, transparent);
+}
+
 nav #mobile-toggle {
   display: none;
   color: var(--black);
@@ -120,7 +124,7 @@ nav .nav-items .nav-item {
 }
 
 .cta.dark {
-  background-color: #3586ff;
+  background-color: #4c3fe2;
   transition: background-color 0.5s;
 }
 
