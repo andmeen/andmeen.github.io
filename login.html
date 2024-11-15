@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الحسابات </title>
+</head>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input {
+            padding: 8px;
+            margin: 10px;
+            width: 200px;
+        }
+        h1 {
+            color: #333;
+        }
+        #loginPage, #registerPage, #loginFormPage, #adminPage {
+            display: none;
+        }
+</style>
+<body>
+  
+ <div id="loginPage">
+        <h1>Welcome to Andmeen</h1>
+        <button id="loginBtn">Login</button>
+        <button id="registerBtn">Register</button>
+    </div>
+
+    <div id="registerPage">
+        <h1>Register</h1>
+        <form id="registerForm">
+            <input type="email" id="registerUsername" placeholder="Email" required><br>
+            <input type="password" id="registerPassword" placeholder="Password" required><br>
+            <button type="submit">Create Account</button>
+        </form>
+        <button onclick="showLoginPage()">Back to Login</button>
+    </div>
+
+    <div id="loginFormPage">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="email" id="loginUsername" placeholder="Email" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <button onclick="showLoginPage()">Back to Home</button>
+    </div>
+
+    <div id="adminPage">
+        <h1>Admin Page</h1>
+        <ul id="userList"></ul>
+        <button onclick="showLoginPage()">Back to Home</button>
+    </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js';
+import { getAuth } from 'https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js';
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js';
+
+  // تهيئة Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyDJWNSpEnRBtLeCwjXRVeOKm54qJp6C2ys",
+  authDomain: "admin0host.firebaseapp.com",
+  projectId: "admin0host",
+  storageBucket: "admin0host.firebasestorage.app",
+  messagingSenderId: "508944643435",
+  appId: "1:508944643435:web:00d068cbc865c07cbc082e",
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const firestore = getFirestore(app);
+
+// تسجيل مستخدم جديد
+document.getElementById("registerForm").onsubmit = async function(event) {
+  event.preventDefault();
+  const email = document.getElementById("registerUsername").value;
+  const password = document.getElementById("registerPassword").value;
+  
+  try {
+    const userCredential = await firebase.auth().createUserWithEmailAndPassword(email, password);
+    const user = userCredential.user;
+    alert("Account created successfully!");
+    // قم بتوجيه المستخدم إلى صفحة تسجيل الدخول بعد إنشاء الحساب
+    showLoginPage();
+  } catch (error) {
+    alert("Error: " + error.message);
+  }
+};
+
+
+// تسجيل الدخول
+document.getElementById("loginForm").onsubmit = async function(event) {
+  event.preventDefault();
+  const email = document.getElementById("loginUsername").value;
+  const password = document.getElementById("loginPassword").value;
+
+  try {
+    const userCredential = await firebase.auth().signInWithEmailAndPassword(email, password);
+    const user = userCredential.user;
+    alert("Login successful!");
+    // قم بتوجيه المستخدم إلى الصفحة الرئيسية أو صفحة المسؤول
+    showAdminPage();
+  } catch (error) {
+    alert("Error: " + error.message);
+  }
+};
+
+
+// تخزين بيانات المستخدم عند إنشاء حساب
+firebase.auth().onAuthStateChanged(user => {
+  if (user) {
+    firestore.collection("users").add({
+      email: user.email,
+      uid: user.uid,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    });
+  }
+});
+
+// عرض المستخدمين في صفحة المسؤول
+async function showAdminPage() {
+  const userList = document.getElementById("userList");
+  userList.innerHTML = ""; // مسح القائمة السابقة
+
+  const snapshot = await firestore.collection("users").get();
+  snapshot.forEach(doc => {
+    const user = doc.data();
+    let li = document.createElement("li");
+    li.textContent = `Email: ${user.email}`;
+    userList.appendChild(li);
+  });
+
+  document.getElementById("adminPage").style.display = "block";
+}
+
+
+</script>  
+</body>
+</html>

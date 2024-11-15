@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Kufam:ital,wght@0,400..900;1,400..900&family=Markazi+Text:wght@400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruwudu:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Kufam:ital,wght@0,400..900;1,400..900&family=Markazi+Text:wght@400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruwudu:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Zain:wght@200;300;400;700;800;900&display=swap');
 
 :root {
   --white: #d1d0cf;
@@ -28,11 +28,11 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Tajawal", serif;
+  font-family: "Zain", sans-serif;
 }
   
 html {
-  font-size: 16px;
+  font-size: 19px;
 }
 
 body {
@@ -144,11 +144,11 @@ nav .nav-items .nav-item {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 55px;
   width: 40%;
   text-align: center;
   color: var(--#252731);
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 2rem;
 }
 
@@ -872,13 +872,13 @@ nav .nav-items .nav-item {
   text-decoration: none;
   font-size: 23px;
   color: #fff;
-  font-family: "Tajawal", serif;
+  font-family: "Zain", sans-serif;
 }
 
 .start-button{
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* width */
