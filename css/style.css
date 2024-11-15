@@ -36,7 +36,6 @@ html {
 }
 
 body {
-  font-family: "IBM Plex Sans Arabic", sans-serif;
   /* background-color: var(--background-color-light); */
   background: linear-gradient(to right, #1c4266, #1a1e49);
   color: #fff;
