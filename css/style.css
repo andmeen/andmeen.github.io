@@ -1129,7 +1129,7 @@ nav .nav-items .nav-item {
   transform: translateY(-20px);
 } */
 
-/* From Uiverse.io by SouravBandyopadhyay */ 
+
 .card-title {
   color: #262626;
   font-size: 1.5em;
@@ -1234,7 +1234,7 @@ nav .nav-items .nav-item {
   font-weight: 500;
   border: 0;
   cursor: pointer;
-  padding: 1em 1em;
+  padding: 0.6em 0.6em;
   display: flex;
   align-items: center;
   gap: 0.25em;
@@ -1444,7 +1444,6 @@ nav .nav-items .nav-item {
 }
 
 
-/* From Uiverse.io by Yaya12085 */ 
 .task {
   position: relative;
   color: #2e2e2f;
@@ -1452,7 +1451,7 @@ nav .nav-items .nav-item {
   background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.5);
   margin-bottom: 1rem;
   border: 3px dashed transparent;
   max-width: 350px;
@@ -1473,7 +1472,7 @@ nav .nav-items .nav-item {
   padding: 4px 13px;
   font-size: 15px;
   color: #ffffff;
-  box-shadow: 2px 2px 10px 2px #252525;
+  box-shadow: 1px 1px 1px 1px #252525;
   background-color: #FFB923;
 }
 
@@ -1538,5 +1537,4 @@ nav .nav-items .nav-item {
 .viewer span svg {
   stroke: #fff;
 }
-
 
