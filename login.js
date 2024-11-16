@@ -85,7 +85,7 @@ const transporter = nodemailer.createTransport({
   service: "SendGrid", // يمكن استبداله بأي خدمة أخرى مثل Gmail
   auth: {
     user: "your_sendgrid_username", // اسم المستخدم في SendGrid
-    pass: "your_sendgrid_api_key", // مفتاح API الخاص بـ SendGrid
+    pass: "d85fe934f790dbd89c4ab425e36bb888", // مفتاح API الخاص بـ SendGrid
   },
 });
 
