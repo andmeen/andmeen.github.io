@@ -11,15 +11,6 @@ const navLinks = document.querySelectorAll(".nav-item").forEach((navItem) => {
   });
 });
 
-// Dark/light Mode
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-}
-
-function toggleDarkMode() {
-  let isDark = document.body.classList.toggle("dark-mode");
-  localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
-}
 
 // On page load
 window.addEventListener('load', () => {

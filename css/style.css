@@ -1538,3 +1538,51 @@ nav .nav-items .nav-item {
   stroke: #fff;
 }
 
+
+
+.ltsgo {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.ltsgo.learn-more {
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0.20em 3em;
+  background: #FFB923;
+  border: 2px solid #f3be26;
+  border-radius: 0.75em;
+  -webkit-transform-style: preserve-3d;
+  transition: 1s;
+}
+
+.ltsgo.learn-more:hover{
+  background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+  border: none;
+}
+
+.ltsgo.learn-more::before {
+  position: absolute;
+  content: "";
+  text-align: center;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f3be26;
+  border-radius: inherit;
+}
+
+.start-buttons{
+  display:inline-flex;
+}
