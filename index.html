@@ -1,371 +1,159 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl" >
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-    <link rel="icon" href="img/New-HOST.png">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="manifest" href="manifest.json">
-    <title>هوست | HOST</title>
-  </head>
-  <body>
-<!--Loading-->
-     <div class="overlay">
-    <div class="animation-box">
-      <h1 style="font-weight: 350;">حياك في <span style="color: #FFB923;">هوست</span></h1><br>
-       <span class="loader"></span>
-    </div>
+<html lang="en" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOST هوست</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" 
+  integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" 
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/New-HOST.png">
+</head>
+<body>
+
+  <!-- القائمة -->
+  <div id="home">
+  <div class="container">
+  <nav>
+  <img src="img/New-HOST.png" class="logo" alt="Logo">
+  <ul>
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="#programming">البرمجة</a></li>
+    <li><a href="#about">عن هوست</a></li>
+    <li><a href="#footer">حساباتنا</a></li>
+  </ul>
+  </nav>
+
+  <!-- الجزء الرئيسيي -->
+  <div class="content">
+  <div class="content-text">
+    <h1><span style="color: #FFB923; font-size: 45px;">هوست</span> خيارك الافضل<br> <span>لتعلم البرمجة</span></h1>
+    <p>موقع هوست بتصميمه الحديث والمودرن والسلس للاستخدام موقع لتعليم برمجة المواقع بكل سهولة</p>
+    <a href="#programming" class="btn">ابدأ التعلم</a>
+  </div>
+  <img src="img/undraw.png" alt="photo">
+  <div class="social">
+    <a href="https://www.youtube.com/@andmeen" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://twitter.com/andmeen121" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https:instagram.com/andmeen121" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  </div><br><br>
+  <h2 style="color: #FFB923;" class="ai">HOST</h2>
+  </div>
+  </div><br><br><br>
+
+  <!-- عن هوست -->
+  <center>
+  <h1 id="about">عن <span style="color: #FFB923;">هوست</span></h1><br>
+  <div class="card">
+  <p class="card-title">اولاً</p>
+  <p class="small-desc">
+    لدينا شرح مفصل للغات برمجة المواقع ومبسط وجميل
+  </p>
+  <div class="go-corner">
+  </div>
   </div>
 
+  <br>
 
-
-    <!-- menu -->
-      <main>  
-      <nav>
-       <img class="logo" src="img/New-HOST.png" alt="host_logo">
-        <ul class="nav-items">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">الصفحة الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a href="#start" class="nav-link">البرمجة</a>
-          </li>
-          <li class="nav-item">
-            <a href="#learn-more" class="nav-link">عن هوست</a>
-          </li>
-          <li class="nav-item">
-            <a href="#social media" class="nav-link">مواقع التواصل الاجتماعي</a>
-          </li>
-            <li class="nav-item">
-            <a href="app_video.html" class="nav-link"> <span style="color: #59ef5b; margin-left: 5px;">New</span>
-              تطبيق هوست
-            </a>
-          </li>
-        </ul>
-      <div class="hover-text">
-        <button class="cta dark"><a style="text-decoration: none; color: white;" href="https://newandmeen2.netlify.app/index2" target="_blank">نسخه الموقع القديمة</a></button>
-        <span class="tooltip-text" id="bottom">جرب النسخه القديمة وشوف الفرق</span>
-      </div>
-        <i id="mobile-toggle" class="fa-solid fa-bars"></i>
-      </nav>
-      
-      <!--Main Part-->
-        <div class="hero">
-        <h1><span> هوست,</span>  خيارك الافضل لتعلم برمجة المواقع <span style="color: #59ef5b;">مجاناً</span></h1>
-        <div class="ctas">   
-          <center>  
-            <div class="start-buttons">   
-<div class="sp">
-
-  <button class="sparkle-button">
-    <span class="spark"></span>
-    
-    <span class="backdrop"></span>
-    <svg class="sparkle" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-      <path d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-      <path d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <span class="text"><a href="#start" style="color: #fff; text-decoration: none; font-size: 23px; margin-right: 10px;">ابدا التعلم</a></span>
-  </button>
-  <div class="bodydrop"></div>
-  <span aria-hidden="true" class="particle-pen">
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-    <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg><svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-  </span>
-</div>
-
-<br>
-
-  <button class="learn-more ltsgo" style="margin-right: 20px;"><a href="#learn-more" style="color: #000; text-decoration: none; font-size: 23px;">اعرف اكثر</a></button>
-      </div>
-</div><br><br>
-        </center>
-       </div>
-    
-<!-- Programming Languages -->
-      <div id="start" class="details">
-        <h2>لغات البرمجة</h2>
-        <div class="details-list">
-          <div class="detail">
-            <h4 title="اقصد بالنسخه الاولى يعني انها اول كورس مهما كان قبل سنتين او اكثر فيعني اني رح انزل نسخه اجدد منها" style="color: #6559ef; margin-bottom: 10px; font-weight: 500; font-size: 18px;">1 - النسخه الاولى</h4>
-            <h4 style="font-size: 23; color: #d1d0cf; margin-bottom: 10px;">4 فيدوهات</h4>
-            <img class="lan_img" src="img/HTML_logo.png">
-            <h4 style="color: red; margin-top: 10px; font-size: 23px;">مغلق لفترة</h4>
-            <h3>HTML | اتش تي إم ال</h3>
-            <button style="background-color: #d8120c; border: #d8120c 1px solid;" class="lan_button"><a class='lan_button2' href='HTML.html'>مغلق لفترة</a></button>
-            <p>
-               لغة توصيف تستخدم في إنشاء وتصميم صفحات ومواقع الويب<br>
-               وهي تستخدم في كتابه هيكل الصفحة والنصوص وغيرها
-            </p>
-          </div>
-
-          <div class="detail">
-            <h4 title="اقصد بالنسخه الاولى يعني انها اول كورس مهما كان قبل سنتين او اكثر فيعني اني رح انزل نسخه اجدد منها" style="color: #6559ef; margin-bottom: 8px; font-weight: 500; font-size: 18px;">1 - النسخه الاولى</h4>
-            <h4 style="font-size: 23; color: #d1d0cf; margin-bottom: 10px;">26 فيديو</h4>
-            <img class="lan_img" src="img/css.png">
-            <h4 style="color: lightgreen; margin-top: 6px;">كورس مكتمل</h4>
-            <h3>CSS | سي اس اس</h3>
-            <button class="lan_button"><a class='lan_button2' href='CSS.html'>بدأ تعلم اللغة</a></button>
-            <p>
-              هي لغة تنسيق لصفحات الويب تهتم بشكل وتصميم المواقع
-            </p>
-          </div>
-  
-          <div class="detail">
-            <h4 title="اقصد بالنسخه الاولى يعني انها اول كورس مهما كان قبل سنتين او اكثر فيعني اني رح انزل نسخه اجدد منها" style="color: #6559ef; margin-bottom: 10px; font-weight: 500; font-size: 18px;">1 - النسخه الاولى</h4>
-            <h4 style="font-size: 23; color: #d1d0cf; margin-bottom: 10px;">42 فيديو</h4>
-            <img class="lan_img" src="img/js.png">
-            <h4 style="color: red; margin-top: 10px;">كورس غير مكتمل</h4>
-            <h3>JavaScript | جافاسكريبت</h3>
-            <button class="lan_button"><a class='lan_button2' href='javascript.html'>بدأ تعلم اللغة</a></button>
-            <p>
-              هي لغة برمجة عالية المستوى، تستخدم أساساً في متصفحات الويب لإنشاء صفحات أكثر تفاعلية
-            </p>
-          </div>
-
-          <div class="detail" style="background-color: #d8120c;">
-            <h4 title="اقصد بالنسخه الاولى يعني انها اول كورس مهما كان قبل سنتين او اكثر فيعني اني رح انزل نسخه اجدد منها" style="color: #59ef5b; margin-bottom: 10px; font-weight: 500; font-size: 18px;">لا يوجد نسخه</h4>
-            <h4 style="font-size: 23; color: #d1d0cf; margin-bottom: 10px;">0 فيديو</h4>
-            <img class="" src="img/react.png" width="125" height="125">
-            <h4>Coming Soon | لم يبدا بعد</h4>
-            <h3>React | رياكت</h3>
-            <button class="lan_button"><a class='lan_button2' href='react.html'>لم يبدا بعد</a></button>
-            <p>
-            مكتبة برمجية مبنية بلغة جافا سكربت، مفتوحة المصدر مُتخصصة بواجهات المستخدم  طورتها شركة ميتا المعروفة سابقًا بفيسبوك، رياكت تُقدم طريقة سلسة وقوية لبناء الواجهات المستخدم
-            </p>
-          </div>
-
-          <div class="detail" style="background-color: #d8120c;">
-            <h4 title="اقصد بالنسخه الاولى يعني انها اول كورس مهما كان قبل سنتين او اكثر فيعني اني رح انزل نسخه اجدد منها" style="color: #59ef5b; margin-bottom: 10px; font-weight: 500; font-size: 18px;">لا يوجد نسخه</h4>
-            <h4 style="font-size: 23; color: #d1d0cf; margin-bottom: 10px;">0 فيديو</h4>
-            <img class="lan_img" src="img/Flutter_logo.png">
-            <h4>Coming Soon | لم يبدا بعد</h4>
-            <h3>Flutter | فلاتر</h3>
-            <button class="lan_button"><a class='lan_button2' href='flutter.html'>لم يبدا بعد</a></button>
-            <p>
-              لبناء واجهات المستخدم لتطبيقات نظام الأندرويد ونظام أي أو إس ونظام الويندوز وتطبيقات الويب
-            </p>
-          </div>
-      </div>
-    </main>
-       
-
-
-<center>
-  <h1 id="learn-more">عن <span style="color: #FFB923;">هوست</span></h1><br>
- <div class="card">
-      <p class="card-title">اولاً</p>
-      <p class="small-desc">
-              لدينا شرح مفصل للغات برمجة المواقع ومبسط وجميل
-      </p>
-      <div class="go-corner">
-        <div class="go-arrow"></div>
-      </div>
-    </div>
-
-<br>
-
- <div class="card">
-      <p class="card-title">ثانياً</p>
-      <p class="small-desc">
-          مقاطعنا مرتبه بشكل نظامي ومدروس لكي نظمن لك شرح جميل ومفهوم لكي لا تمل بينما وانت تشاهد المقطع التعليمي
-      </p>
-      <div class="go-corner">
-        <div class="go-arrow"></div>
-      </div>
-    </div>
-    <br>
-
-    <div class="card">
-      <p class="card-title">ثالثاً</p>
-      <p class="small-desc">
-          نحفزك اثناء مشاهدتك للمقطع وايضاً نعطي نصائح لك للبرمجة والتعلم والاشياء المهمه اثناء مشاهدتك للمقطع
-      </p>
-      <div class="go-corner">
-        <div class="go-arrow"></div>
-      </div>
-    </div><br><br><br><br>
-</center>
-
-<center>
-<h1>رأي مستخدمينا</h1>
-<br><br>
-<div class="task" draggable="true">
-  <div class="tags">
-      <button class="options">
-      <svg xml:space="preserve" viewBox="0 0 41.915 41.916" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M11.214,20.956c0,3.091-2.509,5.589-5.607,5.589C2.51,26.544,0,24.046,0,20.956c0-3.082,2.511-5.585,5.607-5.585 C8.705,15.371,11.214,17.874,11.214,20.956z"></path> <path d="M26.564,20.956c0,3.091-2.509,5.589-5.606,5.589c-3.097,0-5.607-2.498-5.607-5.589c0-3.082,2.511-5.585,5.607-5.585 C24.056,15.371,26.564,17.874,26.564,20.956z"></path> <path d="M41.915,20.956c0,3.091-2.509,5.589-5.607,5.589c-3.097,0-5.606-2.498-5.606-5.589c0-3.082,2.511-5.585,5.606-5.585 C39.406,15.371,41.915,17.874,41.915,20.956z"></path> </g> </g> </g></svg>
-    </button>
-    <span class="tag">Ali_Mohammed20090</span>
+  <div class="card">
+  <p class="card-title">ثانياً</p>
+  <p class="small-desc">
+    مقاطعنا مرتبه بشكل نظامي ومدروس لكي نظمن لك شرح جميل ومفهوم لكي لا تمل بينما وانت تشاهد المقطع التعليمي
+  </p>
+  <div class="go-corner">
   </div>
-  <p style="font-size: 22px;">افضل موقع لتعلم برمجة المواقع مجاناً</p>
-  <div class="stats">
-    <div>
-      <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-linecap="round" stroke-width="2" d="M12 8V12L15 15"></path> <circle stroke-width="2" r="9" cy="12" cx="12"></circle> </g></svg><p style="margin-right: 7px; color: #000;">2024/03/02</p></div>
-      </div>
   </div>
-</div>
+  <br>
 
-<br>
-<div class="task" draggable="true">
-  <div class="tags">
-      <button class="options">
-      <svg xml:space="preserve" viewBox="0 0 41.915 41.916" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M11.214,20.956c0,3.091-2.509,5.589-5.607,5.589C2.51,26.544,0,24.046,0,20.956c0-3.082,2.511-5.585,5.607-5.585 C8.705,15.371,11.214,17.874,11.214,20.956z"></path> <path d="M26.564,20.956c0,3.091-2.509,5.589-5.606,5.589c-3.097,0-5.607-2.498-5.607-5.589c0-3.082,2.511-5.585,5.607-5.585 C24.056,15.371,26.564,17.874,26.564,20.956z"></path> <path d="M41.915,20.956c0,3.091-2.509,5.589-5.607,5.589c-3.097,0-5.606-2.498-5.606-5.589c0-3.082,2.511-5.585,5.606-5.585 C39.406,15.371,41.915,17.874,41.915,20.956z"></path> </g> </g> </g></svg>
-    </button>
-    <span class="tag">m_x0klr</span>
+  <div class="card">
+  <p class="card-title">ثالثاً</p>
+  <p class="small-desc">
+    نحفزك اثناء مشاهدتك للمقطع وايضاً نعطي نصائح لك للبرمجة والتعلم والاشياء المهمه اثناء مشاهدتك للمقطع
+  </p>
+  <div class="go-corner">
   </div>
-  <p style="font-size: 22px;">قاعد اتعلم JavaScript وللحين الكورس عاجبني</p>
-  <div class="stats">
-    <div>
-      <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-linecap="round" stroke-width="2" d="M12 8V12L15 15"></path> <circle stroke-width="2" r="9" cy="12" cx="12"></circle> </g></svg><p style="margin-right: 7px; color: #000;">2024/03/02</p></div>
-      </div>
+  </div><br><br><br><br>
+  </center>
+
+
+  <!-- اللغات البرمجية -->
+  <center>
+  <div id="programming" class="skills-container">
+  <h1>اللغات البرمجية مع<span style="color: #FFB923; margin-right: 10px;">HOST</span></h1><br><br>
+  <div class="skills-grid">
+  <div class="skill">
+  <center>
+  <img src="img/HTML_logo.png" alt="HTML">
+  </center>
+  <p>HTML</p>
+  <p>لغة توصيف تستخدم في إنشاء وتصميم صفحات ومواقع الويب</p>
+  <br>
+  <a href="HTML.html" class="btn2">ابدأ التعلم</a>
   </div>
-</div>
-<br>
-<div class="task" draggable="true">
-  <div class="tags">
-      <button class="options">
-      <svg xml:space="preserve" viewBox="0 0 41.915 41.916" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M11.214,20.956c0,3.091-2.509,5.589-5.607,5.589C2.51,26.544,0,24.046,0,20.956c0-3.082,2.511-5.585,5.607-5.585 C8.705,15.371,11.214,17.874,11.214,20.956z"></path> <path d="M26.564,20.956c0,3.091-2.509,5.589-5.606,5.589c-3.097,0-5.607-2.498-5.607-5.589c0-3.082,2.511-5.585,5.607-5.585 C24.056,15.371,26.564,17.874,26.564,20.956z"></path> <path d="M41.915,20.956c0,3.091-2.509,5.589-5.607,5.589c-3.097,0-5.606-2.498-5.606-5.589c0-3.082,2.511-5.585,5.606-5.585 C39.406,15.371,41.915,17.874,41.915,20.956z"></path> </g> </g> </g></svg>
-    </button>
-    <span class="tag">Dev_Mariym</span>
+  <div class="skill">
+  <center>
+  <img src="img/css.png" alt="CSS" style="border-radius: 11px;">
+  </center>
+  <p>CSS</p>
+  <p>هي لغة تنسيق لصفحات الويب تهتم بشكل وتصميم المواقع</p>
+  <br>
+  <a href="CSS.html" class="btn2">ابدأ التعلم</a>
   </div>
-  <p style="font-size: 22px;">موقع سلس جداً وسهل للاستخدام</p>
-  <div class="stats">
-    <div>
-      <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-linecap="round" stroke-width="2" d="M12 8V12L15 15"></path> <circle stroke-width="2" r="9" cy="12" cx="12"></circle> </g></svg><p style="margin-right: 7px; color: #000;">2024/03/02</p></div>
-      </div>
+  <div class="skill">
+  <center>
+  <img src="img/js.png" alt="JS">
+  </center>
+  <p>JavaScript</p>
+  <p>هي لغة برمجة عالية المستوى، تستخدم أساساً في متصفحات الويب لإنشاء صفحات أكثر تفاعلية</p>
+  <br>
+  <a href="javascript.html" class="btn2">ابدأ التعلم</a>
   </div>
-</div>
-<br><br><br>
-</center>
-
-   <!-- Host Improving Website -->
-        <div class="slideshow-container">
-          <h1 style="text-align: center; font-weight: 400; margin-bottom: 20px;">مراحل تطور موقع هوست على مدار 3 سنوات</h1>
-
-        <div class="mySlides">
-            <img class="img_dot" src="img/HOSTold1.png" style="width:100%"><br><br>
-            <h3>النسخه الاول في عام 2021</h3>
-        </div>
-
-        <div class="mySlides">
-            <img class="img_dot" src="img/HOSTold2.png" style="width:100%"><br><br>
-            <h3>النسخه الثانية في عام 2022</h3>
-        </div>
-
-        <div class="mySlides">
-            <img class="img_dot" src="img/HOSTold3.png" style="width:100%"><br><br>
-            <h3>النسخه الثالثة في عام 2023</h3>
-            <center>
-            <h3>وحنا مستمرين في التطوير دايماً 👍</h3>
-            </center>
-        </div>
-    </div>
-    <br>
-
-    <!-- Dots/Circles to indicate the current slide -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-<br><br><br>
-  
+  <center>
+  <div style="background: red; height: 360px;" class="skill">
+  <center>
+  <img src="img/Flutter_logo.png" alt="Flutter">
+  </center>
+  <p>Flutter</p>
+  <p>لبناء واجهات المستخدم لتطبيقات نظام الأندرويد ونظام أي أو إس ونظام الويندوز وتطبيقات الويب</p>
+  <br>
+  <a href="flutter.html" class="btn2">ابدأ التعلم</a>
+  </div>
+  </center>
+  </div>
+  </div>
+  </div>
+  </center>
+  <br><br><br><br><br>
 
 
-<!--Footer-->
-<footer class="footer">
-    <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-    </div>
-    <h1 style="color: #fff;">هوست | HOST</h1><br>
-    <h2 style="font-weight: 400;">حساباتي في التواصل الاجتماعي:</h2>
-    <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="https://www.youtube.com/@andmeen" target="_blank">
-          <ion-icon name="logo-youtube"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="https://x.com/andmeen121" target="_blank">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/andmeen121" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
-    </ul>
-    <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="index.html">الرئيسية</a></li>
-      <li class="menu__item"><a class="menu__link" href="#learn-more">عن هوست</a></li>
-      <li class="menu__item"><a class="menu__link" href="learning.html">تعلم البرمجة</a></li>
-    </ul>
-    <p>جميع الحقوق محفوظة لدى هوست &copy; | <span><a href="https://instagram.com/andmeen121" target="_blank" style="text-decoration: black; color: #fff;">andmeen121</a></span> 2025@</p>
-    <h3>V.4</h3>
+  <!-- الفوتر -->
+  <footer id="footer">
+  <div class="footer-content">
+      <img style="border-radius: 30px;"  class="end-logo" src="img/New-HOST.png" alt="logo" width="55" height="55"><br>
+      <h3>هوست HOST</h3>
+    <p>موقع هوست بتصميمه الحديث والمودرن والسلس للاستخدام موقع لتعليم برمجة المواقع بكل سهولة</p>
+
+      <ul class="socials">
+    <a href="https://www.youtube.com/@andmeen" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://twitter.com/andmeen121" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https:instagram.com/andmeen121" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة لدى &copy; <a href="https://instagram.com/andmeen121" target="_blank">AMIN FAISAL</a>  </p>
+              <div class="footer-menu">
+                <ul class="f-menu">
+                  <li><a href="index.html">الرئيسية</a></li>
+                  <li><a href="#programming">البرمجة</a></li>
+                  <li><a href="#about">عن هوست</a></li>
+                  <li><a href="#footer">حساباتنا</a></li>
+                </ul>
+              </div>
+  </div>
+
   </footer>
-
-
-
-<!-- Other -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="js/script.js"></script>
-<script src="app.js"></script>
-<script src="sw.js"></script>
-</body>
-</html>
+  </body>
+  </html>
