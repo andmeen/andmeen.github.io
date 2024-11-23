@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Kufam:ital,wght@0,400..900;1,400..900&family=Markazi+Text:wght@400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruwudu:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Baloo+Bhaijaan+2:wght@400..800&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Kufam:ital,wght@0,400..900;1,400..900&family=Markazi+Text:wght@400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruwudu:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+*{
+  font-family: "Zain", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #717171;
+  background-color: #4c3fe2;
+}
+
+.container{
+   margin: 0 7rem;
+   height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+#home{
+  height: 100vh;
+  background: linear-gradient(to right, #4D48DF, #511AA0);
+  color: #fff;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+nav .logo{
+  width: 55px;
+  transition: all 0.4s;
+  border-radius: 50px;
+}
+
+nav .logo:hover{
+  transform: translateY(-10px);
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+nav ul a{
+  color: #fff;
+  padding: 30px;
+  font-size: 22px;
+  transition: all 0.4s;
+}
+
+nav ul a:hover{
+  color: #252525;
+}
+
+.title{
+  text-align: center;
+  font-size: 38px;
+}
+
+/* From Uiverse.io by Rodrypaladin */ 
+.card {
+  width: 250px;
+  background: rgb(44, 44, 44);
+  font-family: "Courier New", Courier, monospace;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+}
+
+.card__title {
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgb(167, 159, 159);
+  font-size: 0.95rem;
+}
+
+.card__data {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid rgb(203, 203, 203);
+  border-left: 1px solid rgb(203, 203, 203);
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.card__right {
+  width: 60%;
+  border-right: 1px solid rgb(203, 203, 203);
+}
+
+.card__left {
+  width: 40%;
+  text-align: end;
+}
+
+.item {
+  padding: 3px 0;
+  background-color: white;
+  color: #000;
+}
+
+.card__right .item {
+  padding-left: 0.8em;
+}
+
+.card__left .item {
+  padding-right: 0.8em;
+}
+
+.item:nth-child(even) {
+  background: rgb(234, 235, 234);
+}

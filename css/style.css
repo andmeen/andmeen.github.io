@@ -98,35 +98,15 @@ nav ul{
   align-items: center;
 }
 
-.main-a{
-  transition: all 0.5s;
-}
-
-.a1:hover{
-  border-bottom: 4px #fff solid;
-  border-radius: 13px;
-}
-
-.a2:hover{
-  border-bottom: 4px #fff solid;
-  border-radius: 13px;
-}
-
-.a3:hover{
-  border-bottom: 4px #fff solid;
-  border-radius: 13px;
-}
-
-.a4:hover{
-  border-bottom: 4px #fff solid;
-  border-radius: 13px;
-}
-
 nav ul a{
   color: #fff;
   padding: 30px;
   font-size: 22px;
-  transition: all 0.9s;
+  transition: all 0.4s;
+}
+
+nav ul a:hover{
+  color: #252525;
 }
 
 #home .content{
