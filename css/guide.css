@@ -73,59 +73,140 @@ nav ul a:hover{
   font-size: 38px;
 }
 
-/* From Uiverse.io by Rodrypaladin */ 
 .card {
-  width: 250px;
+  width: 350px;
+  height: 330px;
   background: rgb(44, 44, 44);
-  font-family: "Courier New", Courier, monospace;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   overflow: hidden;
 }
 
 .card__title {
-  color: #000;
+  color: #fff;
   font-weight: bold;
   padding: 5px 10px;
   border-bottom: 1px solid rgb(167, 159, 159);
-  font-size: 0.95rem;
+  font-size: 1.3rem;
 }
 
 .card__data {
-  font-size: 0.8rem;
+  font-size: 0.99rem;
   display: flex;
   justify-content: space-between;
-  border-right: 1px solid rgb(203, 203, 203);
-  border-left: 1px solid rgb(203, 203, 203);
-  border-bottom: 1px solid rgb(203, 203, 203);
+
 }
 
 .card__right {
-  width: 60%;
-  border-right: 1px solid rgb(203, 203, 203);
+  width: 350px;
+  height: 300px;
 }
 
 .card__left {
-  width: 40%;
+  width: 350px;
+  height: 300px;
   text-align: end;
 }
 
 .item {
   padding: 3px 0;
-  background-color: white;
-  color: #000;
+  background-color: #005ce6;
+  color: #fff;
+  margin: 5%;
 }
 
 .card__right .item {
   padding-left: 0.8em;
+  border-radius: 8px;
+  padding-bottom: 55px;
+  background-color: #005ce6;
+  color: #fff;
 }
 
 .card__left .item {
   padding-right: 0.8em;
+  border-radius: 8px;
+  background-color: #005ce6;
+  color: #fff;
 }
 
 .item:nth-child(even) {
   background: rgb(234, 235, 234);
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+  .container {
+    margin: 0 1rem;
+  }
+
+  nav ul a{
+    padding: 10px;
+  }
+
+  #home .content{
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0 0;
+  }
+
+  #home .content .content-text {
+    margin-bottom: 2rem;
+  }
+
+  #home .content .content-text p{
+    width: 100%;
+  }
+
+  #home .content img{
+    width: 290px;
+    margin-bottom: 10px;
+  }
+
+  .social{
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+}
+
+/* Mobile*/
+
+@media (max-width: 600px) {
+  #home{
+    height: 110vh;
+  }
+
+  nav .logo{
+    width: 0;
+    height: 0;
+  }
+
+  nav{
+    display: block;
+  }
+
+  nav .logo{
+    display: block;
+    margin: 0 auto 15px ;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul a{
+    font-size: 12px;
+  }
+
+  .ai{
+    margin-top: 15px;
+  }
+
+  .social i{
+  display: inline;
+  margin: 15px;
+  }
 }
