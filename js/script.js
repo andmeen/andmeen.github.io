@@ -69,3 +69,5 @@ function showSlides(n) {
 }
 
 
+  // Auto-update year copyright
+  document.getElementById('currentYear').textContent = new Date().getFullYear();

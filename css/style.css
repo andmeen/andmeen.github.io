@@ -431,6 +431,7 @@ nav ul a:hover{
 /* اللغات البرمجة */
 .learning-section {
   padding: 100px 0;
+  margin-top: 90px;
 }
 
 .container {
@@ -584,7 +585,7 @@ nav ul a:hover{
 @media (max-width: 768px) {
   .learning-section {
     padding: 70px 0;
-    margin-top: 100px;
+    margin-top: 500px;
     margin-bottom: 400px;
   }
 
@@ -617,7 +618,7 @@ nav ul a:hover{
 }
 /* النهاية */
 
-
+/* Footer */
 footer{
     bottom: 0;
     left: 0;
