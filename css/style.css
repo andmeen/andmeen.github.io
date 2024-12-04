@@ -11,6 +11,7 @@
 
 *{
   font-family: "IBM Plex Sans Arabic", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -329,6 +330,8 @@ body {
     flex-direction: column;
     text-align: center;
     color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .about-title {
@@ -516,181 +519,181 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.start-btn {
+    background: var(--gradient);
+    color: white;
+    padding: 0.4rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
 
-.reminder-section {
-    background: linear-gradient(135deg, #0f0f1e, #1f1f3a);
+.footer {
+    position: relative;
+    background: linear-gradient(180deg, var(--rooy-dark) 0%, #13131f 100%);
+    color: #fff;
+    overflow: hidden;
+    padding-top: 100px; 
+}
+
+
+/* محتوى الفوتر */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     padding: 4rem 2rem;
-    min-height: 80vh;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer-section {
+    padding: 1rem;
+}
+
+.brand-description {
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.reminder-container {
-    max-width: 500px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.reminder-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.reminder-icon {
-    font-size: 3rem;
-    color: #FFB923;
-    margin-bottom: 1rem;
-    animation: bell-ring 2s ease infinite;
-}
-
-.section-title {
     color: #fff;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
 }
 
-.section-desc {
-    color: rgba(255, 255, 255, 0.7);
+.social-link:hover {
+    background: var(--rooy-gradient);
+    transform: translateY(-3px);
 }
 
-/* نافذة طلب الإذن */
-.notification-permission {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 1.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
-.notification-permission i {
-    font-size: 2rem;
-    color: #FFB923;
-    margin-bottom: 1rem;
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--rooy-gradient);
 }
 
-.permission-btn {
-    background: linear-gradient(45deg, #7234fa, #FFB923);
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s;
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--rooy-primary);
+    padding-right: 5px;
+}
+
+.footer-form .form-group {
+    position: relative;
     margin-top: 1rem;
 }
 
-.permission-btn:hover {
-    transform: translateY(-2px);
+.footer-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 
-/* نموذج التذكير */
-.reminder-form {
+.footer-form button {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 50px;
+    background: var(--rooy-gradient);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(124, 50, 255, 0.2);
+}
+
+.footer-bottom {
+    padding: 1.5rem 2rem;
+    background: rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
     gap: 1.5rem;
 }
 
-.time-picker {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.time-picker label {
-    color: #fff;
+.footer-links a:hover {
+    color: var(--rooy-primary);
 }
 
-.time-picker input {
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    padding: 0.8rem;
-    border-radius: 10px;
-    color: #fff;
-}
-
-.days-picker {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.days-picker label {
-    color: #fff;
-}
-
-.days-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 0.5rem;
-}
-
-.day-btn {
-    position: relative;
-    cursor: pointer;
-}
-
-.day-btn input {
-    position: absolute;
-    opacity: 0;
-}
-
-.day-btn span {
-    display: block;
-    padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    color: #fff;
-    text-align: center;
-    transition: all 0.3s;
-}
-
-.day-btn input:checked + span {
-    background: linear-gradient(45deg, #7234fa, #FFB923);
-    transform: translateY(-2px);
-}
-
-.save-btn {
-    background: linear-gradient(45deg, #7234fa, #FFB923);
-    border: none;
-    padding: 1rem;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.save-btn:hover {
-    transform: translateY(-2px);
-}
-
-@keyframes bell-ring {
-    0% { transform: rotate(0); }
-    10% { transform: rotate(15deg); }
-    20% { transform: rotate(-15deg); }
-    30% { transform: rotate(15deg); }
-    40% { transform: rotate(-15deg); }
-    50% { transform: rotate(0); }
-    100% { transform: rotate(0); }
-}
-
-/* تجاوب */
-@media (max-width: 480px) {
-    .reminder-container {
-        padding: 1.5rem;
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
     }
 
-    .days-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
     }
 }

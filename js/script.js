@@ -12,20 +12,20 @@
 // });
 
 
-// // On page load
-// window.addEventListener('load', () => {
-//   const overlay = document.querySelector('.overlay');
-//   const content = document.querySelector('.content');
+// On page load
+window.addEventListener('load', () => {
+  const overlay = document.querySelector('.overlay');
+  const content = document.querySelector('.content');
   
-//   // بعد فترة معينة (مثلاً 3 ثواني)، نغلق الـ overlay ونظهر المحتوى
-//   setTimeout(() => {
-//     overlay.style.opacity = '0';
-//     setTimeout(() => {
-//       overlay.style.display = 'none'; // إخفاء الـ overlay بعد التلاشي
-//       content.style.display = 'block'; // إظهار المحتوى
-//     }, 1000); // تأخير بسيط ليكتمل التلاشي
-//   }, 1000); // فترة العرض للانيميشن (3 ثواني)
-// });
+  // بعد فترة معينة (مثلاً 3 ثواني)، نغلق الـ overlay ونظهر المحتوى
+  setTimeout(() => {
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+      overlay.style.display = 'none'; // إخفاء الـ overlay بعد التلاشي
+      content.style.display = 'block'; // إظهار المحتوى
+    }, 1000); // تأخير بسيط ليكتمل التلاشي
+  }, 1000); // فترة العرض للانيميشن (3 ثواني)
+});
 
 // let slideIndex = 1;
 // showSlides(slideIndex);
@@ -99,3 +99,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
+document.querySelectorAll(".social-link").forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    link.style.animation = "pulse 0.5s infinite";
+  });
+  link.addEventListener("mouseout", () => {
+    link.style.animation = "";
+  });
+});
