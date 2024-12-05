@@ -541,7 +541,7 @@ body {
 /* Footer Start */
 .footer {
     position: relative;
-    background: linear-gradient(180deg, var(--rooy-dark) 0%, #13131f 100%);
+    background: linear-gradient(180deg, #13131f 100%);
     color: #fff;
     overflow: hidden;
     padding-top: 100px; 
