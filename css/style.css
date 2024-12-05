@@ -21,8 +21,7 @@ body {
     color: var(--light);
 }
 
-/* Navbar الزجاجي */
-/* تعديل Navbar */
+/* Nav Start */
 .glass-nav {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -49,20 +48,23 @@ body {
     border-radius: 50px;
 }
 
-/* تعديل الروابط */
+
 .nav-links a {
     color: var(--light);
     text-decoration: none;
-    margin-right: 1.5rem; /* تقليل المسافة بين الروابط */
-    font-size: 0.9rem; /* تصغير حجم الخط */
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
     position: relative;
 }
 
-/* تعديل زر دليلك للبرمجة */
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
 .cta-button {
     background: var(--gradient);
-    padding: 0.5rem 1rem; /* تقليل padding */
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     color: white !important;
 }
@@ -70,7 +72,9 @@ body {
 .cta-button:hover {
     transform: translateY(-2px);
 }
-/* Hero Section */
+/* Nav End */
+
+/* Hero Section Start */
 .hero {
     padding: 8rem 2rem 4rem;
     max-width: 1200px;
@@ -180,8 +184,9 @@ body {
         font-size: 2.5rem;
     }
 }
+/* Hero Section End */
 
-/* القائمة المنسدلة للموبايل */
+/* Mobile Menu Start */
 .menu-btn {
     display: none;
     flex-direction: column;
@@ -319,7 +324,9 @@ body {
 .menu-btn.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+/* Mobile Menu End */
 
+/* About Section Start */
 .about-section {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     backdrop-filter: blur(15px);
@@ -435,7 +442,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* About Section End */
 
+/* Learning Section Start */
 .learning-section {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
     padding: 6rem 2rem;
@@ -526,7 +535,234 @@ body {
     border-radius: 8px;
     text-decoration: none;
 }
+/* Learning Section End */
 
+/* Reminder Section Start */
+.reminder-section {
+    background: var(--gradient);
+    padding: 6rem 2rem;
+    margin: 4rem auto;
+    max-width: 1200px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.reminder-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reminder-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.reminder-icon {
+    font-size: 3.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-desc {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.notification-permission {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notification-permission i {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.notification-permission p {
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.permission-btn {
+    background: var(--gradient);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.permission-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(114, 52, 250, 0.3);
+}
+
+.reminder-form {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.time-picker, .days-picker {
+    margin-bottom: 2rem;
+}
+
+.time-picker label, .days-picker label {
+    display: block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.time-picker input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    width: 200px;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.day-btn {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.day-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.day-btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.day-btn span {
+    display: block;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.day-btn input:checked + span {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.save-btn {
+    background: var(--gradient);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.save-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(114, 52, 250, 0.3);
+}
+
+.save-btn i {
+    font-size: 1.2rem;
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .reminder-section {
+        padding: 3rem 1rem;
+        margin: 2rem 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .days-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .time-picker input {
+        width: 100%;
+    }
+
+    .permission-btn, .save-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* تأثيرات حركية */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.reminder-icon {
+    animation: pulse 2s infinite;
+}
+
+.day-btn input:checked + span {
+    animation: pulse 0.3s;
+}
+/* Reminder Section End */
+
+/* Footer Start */
 .footer {
     position: relative;
     background: linear-gradient(180deg, var(--rooy-dark) 0%, #13131f 100%);
@@ -697,3 +933,4 @@ body {
         justify-content: center;
     }
 }
+/* Footer End */  

@@ -1,17 +1,3 @@
-// // Menu
-// const mobileToggle = document.getElementById("mobile-toggle");
-
-// mobileToggle?.addEventListener("click", () => {
-//   document.querySelector(".nav-items")?.classList.toggle("active");
-// });
-
-// const navLinks = document.querySelectorAll(".nav-item").forEach((navItem) => {
-//   navItem.addEventListener("click", () => {
-//     document.querySelector(".nav-items")?.classList.toggle("active");
-//   });
-// });
-
-
 // On page load
 window.addEventListener('load', () => {
   const overlay = document.querySelector('.overlay');
@@ -26,47 +12,6 @@ window.addEventListener('load', () => {
     }, 1000); // تأخير بسيط ليكتمل التلاشي
   }, 1000); // فترة العرض للانيميشن (3 ثواني)
 });
-
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides((slideIndex += n));
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides((slideIndex = n));
-// }
-
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
-
-//   if (n > slides.length) {
-//     slideIndex = 1;
-//   }
-
-//   if (n < 1) {
-//     slideIndex = slides.length;
-//   }
-
-//   // Hide all slides
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-
-//   // Remove "active" class from all dots
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-
-//   // Display the current slide and add "active" class to the corresponding dot
-//   slides[slideIndex - 1].style.display = "block";
-//   dots[slideIndex - 1].className += " active";
-// }
 
 
 //   // Auto-update year copyright
@@ -99,7 +44,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
+// تحريك الروابط
 document.querySelectorAll(".social-link").forEach((link) => {
   link.addEventListener("mouseover", () => {
     link.style.animation = "pulse 0.5s infinite";
@@ -107,4 +52,59 @@ document.querySelectorAll(".social-link").forEach((link) => {
   link.addEventListener("mouseout", () => {
     link.style.animation = "";
   });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const enableNotificationsButton = document.getElementById(
+    "enable-notifications"
+  );
+  const reminderForm = document.querySelector(".reminder-form");
+
+  let reminders = [];
+
+  enableNotificationsButton.addEventListener("click", () => {
+    Notification.requestPermission().then((permission) => {
+      if (permission === "granted") {
+        alert("تم تفعيل الإشعارات!");
+      } else {
+        alert("لم يتم تفعيل الإشعارات.");
+      }
+    });
+  });
+
+  reminderForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const reminderTime = document.getElementById("reminder-time").value;
+    const selectedDays = Array.from(
+      document.querySelectorAll(".day-btn input:checked")
+    ).map((input) => input.value);
+
+    if (reminderTime && selectedDays.length > 0) {
+      reminders.push({ time: reminderTime, days: selectedDays });
+      alert(
+        `تم حفظ التذكير في الساعة ${reminderTime} للأيام: ${selectedDays.join(
+          ", "
+        )}`
+      );
+    } else {
+      alert("يرجى تحديد وقت وأيام التذكير.");
+    }
+  });
+
+  setInterval(() => {
+    const now = new Date();
+    const currentTime = now.toTimeString().slice(0, 5);
+    const currentDay = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][
+      now.getDay()
+    ];
+
+    reminders.forEach((reminder) => {
+      if (reminder.time === currentTime && reminder.days.includes(currentDay)) {
+        new Notification("تذكير", {
+          body: "حان وقت متابعة الدرس!",
+          icon: "img/New-HOST.png",
+        });
+      }
+    });
+  }, 60000); // تحقق كل دقيقة
 });
