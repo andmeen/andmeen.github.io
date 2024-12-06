@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد المبرمج</title>
+    <link rel="icon" href="img/New-HOST.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: 
+                linear-gradient(
+                    125deg,
+                    rgba(114, 52, 250, 0.7),
+                    rgba(77, 72, 223, 0.7),
+                    rgba(255, 185, 35, 0.5)
+                ),
+                url('img/tuwaiq.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .dashboard {
+            width: 90%;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-section {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            border: 3px solid #FFB923;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        .info-section {
+            padding: 30px;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 20px rgba(114, 52, 250, 0.3);
+        }
+
+        .bio {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #fff;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skills-section {
+            display: grid;
+            gap: 20px;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-name {
+            margin-bottom: 10px;
+            color: #FFB923;
+            font-size: 1.1em;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress {
+            height: 100%;
+            background: linear-gradient(45deg, #7234fa, #4D48DF);
+            border-radius: 5px;
+            position: relative;
+            animation: fillProgress 1.5s ease-out forwards;
+        }
+
+        @keyframes fillProgress {
+            from { width: 0; }
+            to { width: var(--progress); }
+        }
+
+        .glow {
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: glow 2s linear infinite;
+        }
+
+        @keyframes glow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(500%); }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .bio {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="profile-section">
+            <img src="img/New-HOST.png" alt="صورة المبرمج" class="profile-pic">
+            <h1> امين فيصل</h1>
+        </div>
+        
+        <div class="info-section">
+            <p class="bio">
+                مبرمج شغوف بتطوير البرمجيات، متخصص في تطوير الويب والتطبيقات. 
+                أسعى دائماً لتعلم التقنيات الحديثة وتطوير مهاراتي في عالم البرمجة.
+            </p>
+            
+            <div class="skills-section">
+                <div class="skill">
+                    <div class="skill-name">HTML & CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress: 90%">
+                            <div class="glow"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress: 85%">
+                            <div class="glow"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-name">Python</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress: 75%">
+                            <div class="glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

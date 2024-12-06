@@ -54,133 +54,35 @@ document.querySelectorAll(".social-link").forEach((link) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const enableNotificationsButton = document.getElementById(
-    "enable-notifications"
-  );
-  const reminderForm = document.querySelector(".reminder-form");
+// Toast Notification
+function showInstagramToast() {
+    const toast = document.getElementById('instagram-toast');
+    const followBtn = toast.querySelector('.toast-follow-btn');
+    const closeBtn = toast.querySelector('.toast-close-btn');
+    
+    // Show toast after 3 seconds
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 3000);
 
-  // استرجاع التذكيرات المحفوظة من localStorage
-  let reminders = JSON.parse(localStorage.getItem("reminders")) || [];
-
-  // التحقق من دعم الإشعارات
-  function checkNotificationSupport() {
-    if (!("Notification" in window)) {
-      alert("متصفحك لا يدعم الإشعارات");
-      return false;
-    }
-    return true;
-  }
-
-  // طلب إذن الإشعارات
-  enableNotificationsButton.addEventListener("click", async () => {
-    if (!checkNotificationSupport()) return;
-
-    try {
-      const permission = await Notification.requestPermission();
-      if (permission === "granted") {
-        alert("تم تفعيل الإشعارات بنجاح!");
-        // إرسال إشعار تجريبي
-        sendNotification("مرحباً!", "تم تفعيل الإشعارات بنجاح");
-      } else {
-        alert("لم يتم السماح بالإشعارات");
-      }
-    } catch (error) {
-      console.error("خطأ في طلب الإذن:", error);
-    }
-  });
-
-  // دالة إرسال الإشعارات
-  function sendNotification(title, body) {
-    try {
-      if (Notification.permission === "granted") {
-        const notification = new Notification(title, {
-          body: body,
-          icon: "img/New-HOST.png",
-          badge: "img/New-HOST.png",
-          dir: "rtl",
-          vibrate: [200, 100, 200],
-        });
-
-        notification.onclick = () => {
-          window.focus();
-          notification.close();
-        };
-      }
-    } catch (error) {
-      console.error("خطأ في إرسال الإشعار:", error);
-    }
-  }
-
-  // حفظ التذكير
-  reminderForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const reminderTime = document.getElementById("reminder-time").value;
-    const selectedDays = Array.from(
-      document.querySelectorAll(".day-btn input:checked")
-    ).map((input) => input.value);
-
-    if (reminderTime && selectedDays.length > 0) {
-      // إضافة التذكير الجديد
-      const newReminder = {
-        time: reminderTime,
-        days: selectedDays,
-        enabled: true,
-      };
-
-      reminders.push(newReminder);
-
-      // حفظ في localStorage
-      localStorage.setItem("reminders", JSON.stringify(reminders));
-
-      alert(
-        `تم حفظ التذكير في الساعة ${reminderTime} للأيام: ${selectedDays.join(
-          ", "
-        )}`
-      );
-
-      // إرسال إشعار تأكيد
-      sendNotification(
-        "تم إضافة تذكير جديد",
-        `سيتم تذكيرك في الساعة ${reminderTime}`
-      );
-    } else {
-      alert("يرجى تحديد وقت وأيام التذكير");
-    }
-  });
-
-  // التحقق من التذكيرات كل دقيقة
-  function checkReminders() {
-    const now = new Date();
-    const currentTime = now.toTimeString().slice(0, 5);
-    const currentDay = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][
-      now.getDay()
-    ];
-
-    console.log(`Checking reminders at ${currentTime} on ${currentDay}`); // للتتبع
-
-    reminders.forEach((reminder) => {
-      if (
-        reminder.enabled &&
-        reminder.time === currentTime &&
-        reminder.days.includes(currentDay)
-      ) {
-        console.log("Sending notification for reminder:", reminder); // للتتبع
-
-        sendNotification(
-          "وقت التعلم! ✨",
-          "حان موعد متابعة دروسك البرمجية. هيا نبدأ!"
-        );
-      }
+    // Handle Follow button click
+    followBtn.addEventListener('click', () => {
+        window.open('https://instagram.com/andmeen121', '_blank');
     });
-  }
 
-  // بدء فحص التذكيرات
-  checkReminders(); // فحص فوري عند تحميل الصفحة
-  setInterval(checkReminders, 60000); // فحص كل دقيقة
+    // Handle Close button click
+    closeBtn.addEventListener('click', () => {
+        toast.classList.remove('show');
+    });
 
-  // عرض حالة الإشعارات الحالية
-  console.log("Notification Permission:", Notification.permission);
-  console.log("Stored Reminders:", reminders);
+    // Auto hide after 9 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 90000);
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    showInstagramToast();
 });
+
