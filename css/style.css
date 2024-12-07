@@ -650,6 +650,103 @@ body {
 /* Learning Section End */
 
 
+/* Platforms Section Start */ 
+.platforms-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+}
+
+.platforms-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platforms-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.platforms-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.platform-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.platform-card:hover {
+    transform: translateY(-10px);
+}
+
+.platform-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #723afa 0%, #6159ff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.platform-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.platform-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.platform-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #723afa 0%, #6159ff 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.platform-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .platforms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .platform-card {
+        margin-bottom: 20px;
+    }
+}
+/* Platforms Section End */
+
 /* Footer Start */
 .footer {
     position: relative;
