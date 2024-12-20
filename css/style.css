@@ -19,6 +19,12 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #0f0f1e, #1f1f3a);
     color: var(--light);
+    scrollbar-width: none; /* Firefox */
+   -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
 }
 
 ::selection{
